@@ -1,0 +1,8 @@
+C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\Encryptions\bin\Debug\Encryptions.exe.config
+C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\Encryptions\bin\Debug\Encryptions.exe
+C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\Encryptions\bin\Debug\Encryptions.pdb
+C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\Encryptions\obj\Debug\Encryptions.csproj.AssemblyReference.cache
+C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\Encryptions\obj\Debug\Encryptions.csproj.SuggestedBindingRedirects.cache
+C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\Encryptions\obj\Debug\Encryptions.csproj.CoreCompileInputs.cache
+C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\Encryptions\obj\Debug\Encryptions.exe
+C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\Encryptions\obj\Debug\Encryptions.pdb
