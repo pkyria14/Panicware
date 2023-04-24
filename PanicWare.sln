@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33502.453
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShellcodeLoaderGPT", "ShellcodeLoaderGPT\ShellcodeLoaderGPT.csproj", "{35028DE6-DD28-4282-9F50-1D366938CF54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encryptions", "Encryptions\Encryptions.csproj", "{9BAA433B-E15E-49CB-A99D-82B9CBA42546}"
+EndProject
+<<<<<<< HEAD:ShellcodeLoaderGPT.sln
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PanicDrop", "PanicDrop\PanicDrop.csproj", "{CB4577C8-2F14-4FBE-BD75-988736F66BDA}"
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleStomping", "ModuleStomping\ModuleStomping.csproj", "{C1F7B602-C968-4CE1-B227-887AFD179E5E}"
+>>>>>>> 65429ae957a5e7684d218d04d03eb88d8ea8689d:PanicWare.sln
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35028DE6-DD28-4282-9F50-1D366938CF54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35028DE6-DD28-4282-9F50-1D366938CF54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35028DE6-DD28-4282-9F50-1D366938CF54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35028DE6-DD28-4282-9F50-1D366938CF54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BAA433B-E15E-49CB-A99D-82B9CBA42546}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BAA433B-E15E-49CB-A99D-82B9CBA42546}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BAA433B-E15E-49CB-A99D-82B9CBA42546}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BAA433B-E15E-49CB-A99D-82B9CBA42546}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD:ShellcodeLoaderGPT.sln
+		{CB4577C8-2F14-4FBE-BD75-988736F66BDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB4577C8-2F14-4FBE-BD75-988736F66BDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB4577C8-2F14-4FBE-BD75-988736F66BDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB4577C8-2F14-4FBE-BD75-988736F66BDA}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{C1F7B602-C968-4CE1-B227-887AFD179E5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1F7B602-C968-4CE1-B227-887AFD179E5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1F7B602-C968-4CE1-B227-887AFD179E5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1F7B602-C968-4CE1-B227-887AFD179E5E}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> 65429ae957a5e7684d218d04d03eb88d8ea8689d:PanicWare.sln
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {047A079B-B30D-4E5A-8D33-22F95E9D6468}
+	EndGlobalSection
+EndGlobal
