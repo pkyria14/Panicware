@@ -6,3 +6,11 @@ C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\Encryptions\obj\Debug\Encryptio
 C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\Encryptions\obj\Debug\Encryptions.csproj.CoreCompileInputs.cache
 C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\Encryptions\obj\Debug\Encryptions.exe
 C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\Encryptions\obj\Debug\Encryptions.pdb
+C:\Users\pkyriakou\source\repos\Panicware\Encryptions\bin\Debug\Encryptions.exe.config
+C:\Users\pkyriakou\source\repos\Panicware\Encryptions\bin\Debug\Encryptions.exe
+C:\Users\pkyriakou\source\repos\Panicware\Encryptions\bin\Debug\Encryptions.pdb
+C:\Users\pkyriakou\source\repos\Panicware\Encryptions\obj\Debug\Encryptions.csproj.AssemblyReference.cache
+C:\Users\pkyriakou\source\repos\Panicware\Encryptions\obj\Debug\Encryptions.csproj.SuggestedBindingRedirects.cache
+C:\Users\pkyriakou\source\repos\Panicware\Encryptions\obj\Debug\Encryptions.csproj.CoreCompileInputs.cache
+C:\Users\pkyriakou\source\repos\Panicware\Encryptions\obj\Debug\Encryptions.exe
+C:\Users\pkyriakou\source\repos\Panicware\Encryptions\obj\Debug\Encryptions.pdb

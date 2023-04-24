@@ -36,7 +36,7 @@ namespace ShellcodeLoaderGPT
             return encryptedBytes;
         }
 
-        static byte[] base64(byte[] inputBytes)
+        static void base64(byte[] inputBytes)
         {
             // Encode inputBytes in base64 format
             string base64String = Convert.ToBase64String(inputBytes);
@@ -47,19 +47,6 @@ namespace ShellcodeLoaderGPT
                 sw.WriteLine(base64String);
             }
 
-            // Decode the base64 string to a byte array
-            byte[] decodedBytes = Convert.FromBase64String(base64String);
-
-            // Output decoded byte array
-            using (StreamWriter sw = new StreamWriter("C:\\Users\\kyria\\Desktop\\github\\ShellcodeLoaderGPT\\Encryptions\\obj\\Debug\\base64decoded.txt"))
-            {
-                foreach (byte b in decodedBytes)
-                {
-                    sw.Write(b + " ");
-                }
-            }
-
-            return decodedBytes;
         }
 
 

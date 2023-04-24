@@ -1,8 +1,0 @@
-C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\SplitShellcode\bin\Debug\SplitShellcode.exe.config
-C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\SplitShellcode\bin\Debug\SplitShellcode.exe
-C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\SplitShellcode\bin\Debug\SplitShellcode.pdb
-C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\SplitShellcode\obj\Debug\SplitShellcode.csproj.AssemblyReference.cache
-C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\SplitShellcode\obj\Debug\SplitShellcode.csproj.SuggestedBindingRedirects.cache
-C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\SplitShellcode\obj\Debug\SplitShellcode.csproj.CoreCompileInputs.cache
-C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\SplitShellcode\obj\Debug\SplitShellcode.exe
-C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\SplitShellcode\obj\Debug\SplitShellcode.pdb
