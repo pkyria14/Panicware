@@ -28,6 +28,7 @@ namespace ShellcodeLoaderGPT
 
             string output = $"byte[] byteArray = new byte[] {{ 0x{hexString.Replace("-", ", 0x")} }};";
 
+            // automate this
             using (StreamWriter sw = new StreamWriter("C:\\Users\\kyria\\Desktop\\github\\ShellcodeLoaderGPT\\Encryptions\\obj\\Debug\\xor.txt"))
             {
                 sw.WriteLine(output);
@@ -41,6 +42,7 @@ namespace ShellcodeLoaderGPT
             // Encode inputBytes in base64 format
             string base64String = Convert.ToBase64String(inputBytes);
 
+            // automate this
             // Output encoded string in base64 format
             using (StreamWriter sw = new StreamWriter("C:\\Users\\kyria\\Desktop\\github\\ShellcodeLoaderGPT\\Encryptions\\obj\\Debug\\base64.txt"))
             {
