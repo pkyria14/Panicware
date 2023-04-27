@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pkyriakou\\source\\repos\\Panicware\\ModuleStomping\\ModuleStomping.csproj": {}
+    "C:\\Users\\kyria\\Desktop\\github\\ShellcodeLoaderGPT\\ModuleStomping\\ModuleStomping.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pkyriakou\\source\\repos\\Panicware\\ModuleStomping\\ModuleStomping.csproj": {
+    "C:\\Users\\kyria\\Desktop\\github\\ShellcodeLoaderGPT\\ModuleStomping\\ModuleStomping.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pkyriakou\\source\\repos\\Panicware\\ModuleStomping\\ModuleStomping.csproj",
+        "projectUniqueName": "C:\\Users\\kyria\\Desktop\\github\\ShellcodeLoaderGPT\\ModuleStomping\\ModuleStomping.csproj",
         "projectName": "ModuleStomping",
-        "projectPath": "C:\\Users\\pkyriakou\\source\\repos\\Panicware\\ModuleStomping\\ModuleStomping.csproj",
-        "packagesPath": "C:\\Users\\pkyriakou\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pkyriakou\\source\\repos\\Panicware\\ModuleStomping\\obj\\",
+        "projectPath": "C:\\Users\\kyria\\Desktop\\github\\ShellcodeLoaderGPT\\ModuleStomping\\ModuleStomping.csproj",
+        "packagesPath": "C:\\Users\\kyria\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kyria\\Desktop\\github\\ShellcodeLoaderGPT\\ModuleStomping\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\pkyriakou\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kyria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

