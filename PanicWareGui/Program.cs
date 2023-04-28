@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace PanicWareGui
 {
-    internal static class PanicWareGui
+    internal static class Program
     {
         /// <summary>
         /// The main entry point for the application.

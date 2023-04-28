@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PanicDrop", "PanicDrop\Pani
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModuleStomping", "ModuleStomping\ModuleStomping.csproj", "{C1F7B602-C968-4CE1-B227-887AFD179E5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PanicWareGui", "PanicWareGui\PanicWareGui.csproj", "{14ACC1B4-3308-44D2-82A4-0E90E8F7D9DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PanicWareGui", "PanicWareGui\PanicWareGui.csproj", "{ADBBB1BB-B276-41DE-A3E0-28533A17E78C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{C1F7B602-C968-4CE1-B227-887AFD179E5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1F7B602-C968-4CE1-B227-887AFD179E5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1F7B602-C968-4CE1-B227-887AFD179E5E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{14ACC1B4-3308-44D2-82A4-0E90E8F7D9DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{14ACC1B4-3308-44D2-82A4-0E90E8F7D9DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{14ACC1B4-3308-44D2-82A4-0E90E8F7D9DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{14ACC1B4-3308-44D2-82A4-0E90E8F7D9DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADBBB1BB-B276-41DE-A3E0-28533A17E78C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADBBB1BB-B276-41DE-A3E0-28533A17E78C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADBBB1BB-B276-41DE-A3E0-28533A17E78C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADBBB1BB-B276-41DE-A3E0-28533A17E78C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
