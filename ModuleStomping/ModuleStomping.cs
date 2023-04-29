@@ -6,7 +6,7 @@ using System.Text;
 
 namespace ModuleStomp
 {
-    class Program
+    class ModuleStomping
     {
         static string ModuleName = "xpsservices.dll";
 
