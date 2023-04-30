@@ -70,6 +70,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\FormEncryptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormEncryptions.Designer.cs">
+      <DependentUpon>FormEncryptions.cs</DependentUpon>
+    </Compile>
     <Compile Include="PanicWare.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\FormEncryptions.resx">
+      <DependentUpon>FormEncryptions.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PanicWare.resx">
       <DependentUpon>PanicWare.cs</DependentUpon>
     </EmbeddedResource>
