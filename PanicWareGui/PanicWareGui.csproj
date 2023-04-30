@@ -57,6 +57,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -70,6 +71,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Encryptions.cs" />
     <Compile Include="Forms\FormEncryptions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,68 +103,33 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Content Include="Resources\MotivaSansTest-Black.otf" />
-    <None Include="Resources\MotivaSansBlack.woff.ttf" />
-    <None Include="Resources\MotivaSansBold.woff.ttf" />
-    <None Include="Resources\MotivaSansExtraBold.ttf" />
-    <None Include="Resources\MotivaSansLight.woff.ttf" />
-    <None Include="Resources\MotivaSansMedium.woff.ttf" />
-    <None Include="Resources\MotivaSansRegular.woff.ttf" />
-    <None Include="Resources\MotivaSansTest-BlackItalic.otf" />
-    <Content Include="Resources\MotivaSansTest-Bold.otf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <None Include="Resources\MotivaSansTest-BoldItalic.otf" />
-    <None Include="Resources\MotivaSansTest-Extrabold.otf" />
-    <None Include="Resources\MotivaSansTest-ExtraboldItalic.otf" />
-    <None Include="Resources\MotivaSansTest-Light.otf" />
-    <None Include="Resources\MotivaSansTest-LightItalic.otf" />
-    <None Include="Resources\MotivaSansTest-Medium.otf" />
-    <None Include="Resources\MotivaSansTest-MediumItalic.otf" />
-    <None Include="Resources\MotivaSansTest-Regular.otf" />
-    <None Include="Resources\MotivaSansTest-RegularItalic.otf" />
-    <None Include="Resources\MotivaSansTest-Thin.otf" />
-    <None Include="Resources\MotivaSansTest-ThinItalic.otf" />
-    <None Include="Resources\MotivaSansThin.ttf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\logo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\gradient-colored-hacker-logo-tem222plate_23-2149182752.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo2.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\transparent.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\font.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fonts.txt" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">
@@ -193,6 +160,15 @@
       <Project>{35028de6-dd28-4282-9f50-1d366938cf54}</Project>
       <Name>ShellcodeLoaderGPT</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transparent1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooking.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

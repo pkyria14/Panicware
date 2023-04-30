@@ -61,81 +61,41 @@ namespace PanicWareGui.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static byte[] MotivaSansBlack_woff {
+        internal static System.Drawing.Bitmap cooking {
             get {
-                object obj = ResourceManager.GetObject("MotivaSansBlack_woff", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] MotivaSansBold_woff {
-            get {
-                object obj = ResourceManager.GetObject("MotivaSansBold_woff", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] MotivaSansExtraBold {
-            get {
-                object obj = ResourceManager.GetObject("MotivaSansExtraBold", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] MotivaSansLight_woff {
-            get {
-                object obj = ResourceManager.GetObject("MotivaSansLight_woff", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] MotivaSansMedium_woff {
-            get {
-                object obj = ResourceManager.GetObject("MotivaSansMedium_woff", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] MotivaSansRegular_woff {
-            get {
-                object obj = ResourceManager.GetObject("MotivaSansRegular_woff", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] MotivaSansThin {
-            get {
-                object obj = ResourceManager.GetObject("MotivaSansThin", resourceCulture);
-                return ((byte[])(obj));
+                object obj = ResourceManager.GetObject("cooking", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap transparent {
+        internal static System.Drawing.Bitmap logo2 {
             get {
-                object obj = ResourceManager.GetObject("transparent", resourceCulture);
+                object obj = ResourceManager.GetObject("logo2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo21 {
+            get {
+                object obj = ResourceManager.GetObject("logo21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap transparent1 {
+            get {
+                object obj = ResourceManager.GetObject("transparent1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

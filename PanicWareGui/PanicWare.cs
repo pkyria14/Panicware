@@ -8,6 +8,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Documents;
 using System.Windows.Forms;
 using System.Xml;
 using FontAwesome.Sharp;
@@ -44,7 +45,7 @@ namespace PanicWareGui
         {
             public static Color color1 = Color.FromArgb(108, 173, 198);
         }
-
+        
         //Methods
         private void ActivateButton(object senderBtn, Color color)
         {
@@ -53,7 +54,7 @@ namespace PanicWareGui
                 DisableButton();
                 //Button
                 currentBtn = (IconButton)senderBtn;
-                currentBtn.BackColor = Color.FromArgb(55, 55, 55);
+                currentBtn.BackColor = Color.FromArgb(21, 21, 21);
                 currentBtn.ForeColor = color;
                 currentBtn.TextAlign = ContentAlignment.MiddleCenter;
                 currentBtn.IconColor = color;

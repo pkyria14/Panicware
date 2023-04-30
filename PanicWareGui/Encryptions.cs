@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EncryptionsNamespace
+namespace EncryptionsMain
 {
-    internal class Encryptions
+    public class Encryptions
     {
         static byte[] XOR(byte[] inputBytes)
         {
@@ -27,16 +27,16 @@ namespace EncryptionsNamespace
             return encryptedBytes;
         }
 
-        static void Main()
+        public static string Main(string plaintext)
         {
-            string contents;
+            string contents = plaintext;
             try
             {
                 // Read all bytes from the file
-                using (StreamReader reader = new StreamReader("C:\\Users\\kyria\\Desktop\\github\\ShellcodeLoaderGPT\\Encryptions\\payload.txt", Encoding.GetEncoding("UTF-8"), true))
+                /*using (StreamReader reader = new StreamReader("C:\\Users\\kyria\\Desktop\\github\\ShellcodeLoaderGPT\\Encryptions\\payload.txt", Encoding.GetEncoding("UTF-8"), true))
                 {
                     contents = reader.ReadToEnd();
-                }
+                }*/
 
                 string[] hexValues = contents.Split(',');
                 byte[] rawcode = new byte[hexValues.Length];
@@ -44,19 +44,21 @@ namespace EncryptionsNamespace
                 for (int i = 0; i < hexValues.Length; i++)
                 {
                     rawcode[i] = Convert.ToByte(hexValues[i], 16);
-                }            
-                
+                }
+
                 // Xor encryption
                 byte[] output = XOR(rawcode);
 
                 // Base64 encoding
                 string bxoredstring = Convert.ToBase64String(output);
 
-                // Write the output in the output.txt
+                /* Write the output in the output.txt
                 using (StreamWriter sw = new StreamWriter("C:\\Users\\kyria\\Desktop\\base64.txt"))
                 {
                     sw.WriteLine(bxoredstring);
                 }
+                */
+                return bxoredstring;
             }
             catch (Exception e)
             {
@@ -66,6 +68,8 @@ namespace EncryptionsNamespace
             {
                 Console.WriteLine("Process completed");
             }
+
+            return "Encryption Error!";
         }
     }
 }
