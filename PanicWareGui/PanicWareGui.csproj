@@ -76,6 +76,12 @@
     <Compile Include="Forms\FormEncryptions.Designer.cs">
       <DependentUpon>FormEncryptions.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormShellcodeLoader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormShellcodeLoader.Designer.cs">
+      <DependentUpon>FormShellcodeLoader.cs</DependentUpon>
+    </Compile>
     <Compile Include="PanicWare.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\FormEncryptions.resx">
       <DependentUpon>FormEncryptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormShellcodeLoader.resx">
+      <DependentUpon>FormShellcodeLoader.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PanicWare.resx">
       <DependentUpon>PanicWare.cs</DependentUpon>
@@ -166,6 +175,24 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Encryptions\Encryptions.csproj">
+      <Project>{9baa433b-e15e-49cb-a99d-82b9cba42546}</Project>
+      <Name>Encryptions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ModuleStomping\ModuleStomping.csproj">
+      <Project>{46d6847c-4540-4ee9-ab7b-7fb013fd1920}</Project>
+      <Name>ModuleStomping</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PanicDrop\PanicDrop.csproj">
+      <Project>{cb4577c8-2f14-4fbe-bd75-988736f66bda}</Project>
+      <Name>PanicDrop</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShellcodeLoaderGPT\ShellcodeLoaderGPT.csproj">
+      <Project>{35028de6-dd28-4282-9f50-1d366938cf54}</Project>
+      <Name>ShellcodeLoaderGPT</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

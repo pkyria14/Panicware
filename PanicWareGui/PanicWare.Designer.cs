@@ -127,8 +127,9 @@
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.IconChar = FontAwesome.Sharp.IconChar.List;
-            this.button6.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.button6.IconColor = System.Drawing.Color.White;
             this.button6.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.button6.IconSize = 20;
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -141,7 +142,7 @@
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button6.Click += new System.EventHandler(this.btnmore_click);
             // 
             // button5
             // 
@@ -151,8 +152,9 @@
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.IconChar = FontAwesome.Sharp.IconChar.ShoePrints;
-            this.button5.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.button5.IconColor = System.Drawing.Color.White;
             this.button5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.button5.IconSize = 20;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -165,7 +167,7 @@
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.Click += new System.EventHandler(this.btnstomper_click);
             // 
             // button4
             // 
@@ -175,8 +177,9 @@
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.IconChar = FontAwesome.Sharp.IconChar.EyeSlash;
-            this.button4.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.button4.IconColor = System.Drawing.Color.White;
             this.button4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.button4.IconSize = 20;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -189,7 +192,7 @@
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.Click += new System.EventHandler(this.btnobfuscator_click);
             // 
             // panelMenuLeft
             // 
@@ -228,8 +231,9 @@
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.IconChar = FontAwesome.Sharp.IconChar.Box;
-            this.button3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.button3.IconColor = System.Drawing.Color.White;
             this.button3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.button3.IconSize = 20;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -242,7 +246,7 @@
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.btndropper_click);
             // 
             // button2
             // 
@@ -252,8 +256,9 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.IconChar = FontAwesome.Sharp.IconChar.Code;
-            this.button2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.button2.IconColor = System.Drawing.Color.White;
             this.button2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.button2.IconSize = 20;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -266,7 +271,7 @@
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.btnshellcodeloader_click);
             // 
             // button1
             // 
@@ -276,8 +281,9 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.IconChar = FontAwesome.Sharp.IconChar.Lock;
-            this.button1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.button1.IconColor = System.Drawing.Color.White;
             this.button1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.button1.IconSize = 20;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -290,7 +296,7 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.btnencryptions_Click);
             // 
             // panelLogo
             // 
@@ -323,11 +329,13 @@
             // 
             // lblTitleChildForm
             // 
-            this.lblTitleChildForm.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTitleChildForm.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblTitleChildForm.AutoSize = true;
-            this.lblTitleChildForm.Location = new System.Drawing.Point(443, 40);
+            this.lblTitleChildForm.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitleChildForm.ForeColor = System.Drawing.Color.White;
+            this.lblTitleChildForm.Location = new System.Drawing.Point(421, 26);
             this.lblTitleChildForm.Name = "lblTitleChildForm";
-            this.lblTitleChildForm.Size = new System.Drawing.Size(39, 13);
+            this.lblTitleChildForm.Size = new System.Drawing.Size(95, 33);
             this.lblTitleChildForm.TabIndex = 0;
             this.lblTitleChildForm.Text = "HOME";
             // 

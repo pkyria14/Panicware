@@ -42,12 +42,7 @@ namespace PanicWareGui
         //Structs
         private struct RGBColors
         {
-            public static Color color1 = Color.FromArgb(172, 126, 241);
-            public static Color color2 = Color.FromArgb(249, 118, 176);
-            public static Color color3 = Color.FromArgb(253, 138, 114);
-            public static Color color4 = Color.FromArgb(95, 77, 221);
-            public static Color color5 = Color.FromArgb(249, 88, 155);
-            public static Color color6 = Color.FromArgb(24, 161, 251);
+            public static Color color1 = Color.FromArgb(108, 173, 198);
         }
 
         //Methods
@@ -58,24 +53,19 @@ namespace PanicWareGui
                 DisableButton();
                 //Button
                 currentBtn = (IconButton)senderBtn;
-                currentBtn.BackColor = Color.FromArgb(37, 36, 81);
+                currentBtn.BackColor = Color.FromArgb(55, 55, 55);
                 currentBtn.ForeColor = color;
                 currentBtn.TextAlign = ContentAlignment.MiddleCenter;
                 currentBtn.IconColor = color;
                 currentBtn.TextImageRelation = TextImageRelation.TextBeforeImage;
                 currentBtn.ImageAlign = ContentAlignment.MiddleRight;
-                //Left border button
-                /*leftBorderBtn.BackColor = color;
-                leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
-                leftBorderBtn.Visible = true;
-                leftBorderBtn.BringToFront();*/
             }
         }
         private void DisableButton()
         {
             if (currentBtn != null)
             {
-                currentBtn.BackColor = Color.FromArgb(31, 30, 68);
+                currentBtn.BackColor = Color.FromArgb(77, 77, 77);
                 currentBtn.ForeColor = Color.Gainsboro;
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
                 currentBtn.IconColor = Color.Gainsboro;
@@ -120,30 +110,31 @@ namespace PanicWareGui
             Reset();
         }
         //Menu Button_Clicks
-        private void button1_Click(object sender, EventArgs e)
+        private void btnencryptions_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new Forms.FormEncryptions());
         }
-        private void button2_Click(object sender, EventArgs e)
+        private void btnshellcodeloader_click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color2);
+            ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new Forms.FormShellcodeLoader());
         }
-        private void button3_Click(object sender, EventArgs e)
+        private void btndropper_click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color3);
+            ActivateButton(sender, RGBColors.color1);
         }
-        private void button4_Click(object sender, EventArgs e)
+        private void btnobfuscator_click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color4);
+            ActivateButton(sender, RGBColors.color1);
         }
-        private void button5_Click(object sender, EventArgs e)
+        private void btnstomper_click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color5);
+            ActivateButton(sender, RGBColors.color1);
         }
-        private void button6_Click(object sender, EventArgs e)
+        private void btnmore_click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color6);
+            ActivateButton(sender, RGBColors.color1);
         }
 
         //Drag Form
