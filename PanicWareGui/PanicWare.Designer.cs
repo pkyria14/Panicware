@@ -34,14 +34,14 @@
             this.UnderLogo = new System.Windows.Forms.Panel();
             this.panelMenuRight = new System.Windows.Forms.Panel();
             this.buttonLayoutRight = new System.Windows.Forms.TableLayoutPanel();
-            this.button6 = new FontAwesome.Sharp.IconButton();
-            this.button5 = new FontAwesome.Sharp.IconButton();
-            this.button4 = new FontAwesome.Sharp.IconButton();
+            this.MoreButton = new FontAwesome.Sharp.IconButton();
+            this.StomperButton = new FontAwesome.Sharp.IconButton();
+            this.ObfuscatorButton = new FontAwesome.Sharp.IconButton();
             this.panelMenuLeft = new System.Windows.Forms.Panel();
             this.buttonLayoutLeft = new System.Windows.Forms.TableLayoutPanel();
-            this.button3 = new FontAwesome.Sharp.IconButton();
-            this.button2 = new FontAwesome.Sharp.IconButton();
-            this.button1 = new FontAwesome.Sharp.IconButton();
+            this.DropperButton = new FontAwesome.Sharp.IconButton();
+            this.LoaderButton = new FontAwesome.Sharp.IconButton();
+            this.encryptionButton = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.panelShadow = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
@@ -109,9 +109,9 @@
             this.buttonLayoutRight.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.buttonLayoutRight.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.buttonLayoutRight.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.buttonLayoutRight.Controls.Add(this.button6, 0, 0);
-            this.buttonLayoutRight.Controls.Add(this.button5, 0, 0);
-            this.buttonLayoutRight.Controls.Add(this.button4, 0, 0);
+            this.buttonLayoutRight.Controls.Add(this.MoreButton, 0, 0);
+            this.buttonLayoutRight.Controls.Add(this.StomperButton, 0, 0);
+            this.buttonLayoutRight.Controls.Add(this.ObfuscatorButton, 0, 0);
             this.buttonLayoutRight.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.buttonLayoutRight.Location = new System.Drawing.Point(0, 60);
             this.buttonLayoutRight.Name = "buttonLayoutRight";
@@ -120,80 +120,80 @@
             this.buttonLayoutRight.Size = new System.Drawing.Size(437, 40);
             this.buttonLayoutRight.TabIndex = 1;
             // 
-            // button6
+            // MoreButton
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
-            this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.IconChar = FontAwesome.Sharp.IconChar.List;
-            this.button6.IconColor = System.Drawing.Color.White;
-            this.button6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.button6.IconSize = 20;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(293, 3);
-            this.button6.Name = "button6";
-            this.button6.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button6.Size = new System.Drawing.Size(141, 34);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "More";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.btnmore_click);
+            this.MoreButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.MoreButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MoreButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.MoreButton.FlatAppearance.BorderSize = 0;
+            this.MoreButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MoreButton.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MoreButton.ForeColor = System.Drawing.Color.White;
+            this.MoreButton.IconChar = FontAwesome.Sharp.IconChar.List;
+            this.MoreButton.IconColor = System.Drawing.Color.White;
+            this.MoreButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.MoreButton.IconSize = 20;
+            this.MoreButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.MoreButton.Location = new System.Drawing.Point(293, 3);
+            this.MoreButton.Name = "MoreButton";
+            this.MoreButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.MoreButton.Size = new System.Drawing.Size(141, 34);
+            this.MoreButton.TabIndex = 5;
+            this.MoreButton.Text = "More";
+            this.MoreButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.MoreButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.MoreButton.UseVisualStyleBackColor = false;
+            this.MoreButton.Click += new System.EventHandler(this.btnmore_click);
             // 
-            // button5
+            // StomperButton
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
-            this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.IconChar = FontAwesome.Sharp.IconChar.ShoePrints;
-            this.button5.IconColor = System.Drawing.Color.White;
-            this.button5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.button5.IconSize = 20;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(148, 3);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(139, 34);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Stomper";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.btnstomper_click);
+            this.StomperButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.StomperButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.StomperButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.StomperButton.FlatAppearance.BorderSize = 0;
+            this.StomperButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.StomperButton.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StomperButton.ForeColor = System.Drawing.Color.White;
+            this.StomperButton.IconChar = FontAwesome.Sharp.IconChar.ShoePrints;
+            this.StomperButton.IconColor = System.Drawing.Color.White;
+            this.StomperButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.StomperButton.IconSize = 20;
+            this.StomperButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.StomperButton.Location = new System.Drawing.Point(148, 3);
+            this.StomperButton.Name = "StomperButton";
+            this.StomperButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.StomperButton.Size = new System.Drawing.Size(139, 34);
+            this.StomperButton.TabIndex = 4;
+            this.StomperButton.Text = "Stomper";
+            this.StomperButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.StomperButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.StomperButton.UseVisualStyleBackColor = false;
+            this.StomperButton.Click += new System.EventHandler(this.btnstomper_click);
             // 
-            // button4
+            // ObfuscatorButton
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
-            this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.IconChar = FontAwesome.Sharp.IconChar.EyeSlash;
-            this.button4.IconColor = System.Drawing.Color.White;
-            this.button4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.button4.IconSize = 20;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(3, 3);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(139, 34);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Obfuscator";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.btnobfuscator_click);
+            this.ObfuscatorButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.ObfuscatorButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ObfuscatorButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.ObfuscatorButton.FlatAppearance.BorderSize = 0;
+            this.ObfuscatorButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ObfuscatorButton.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ObfuscatorButton.ForeColor = System.Drawing.Color.White;
+            this.ObfuscatorButton.IconChar = FontAwesome.Sharp.IconChar.EyeSlash;
+            this.ObfuscatorButton.IconColor = System.Drawing.Color.White;
+            this.ObfuscatorButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ObfuscatorButton.IconSize = 20;
+            this.ObfuscatorButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ObfuscatorButton.Location = new System.Drawing.Point(3, 3);
+            this.ObfuscatorButton.Name = "ObfuscatorButton";
+            this.ObfuscatorButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.ObfuscatorButton.Size = new System.Drawing.Size(139, 34);
+            this.ObfuscatorButton.TabIndex = 3;
+            this.ObfuscatorButton.Text = "Obfuscator";
+            this.ObfuscatorButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ObfuscatorButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ObfuscatorButton.UseVisualStyleBackColor = false;
+            this.ObfuscatorButton.Click += new System.EventHandler(this.btnobfuscator_click);
             // 
             // panelMenuLeft
             // 
@@ -213,9 +213,9 @@
             this.buttonLayoutLeft.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.buttonLayoutLeft.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.buttonLayoutLeft.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.buttonLayoutLeft.Controls.Add(this.button3, 2, 0);
-            this.buttonLayoutLeft.Controls.Add(this.button2, 1, 0);
-            this.buttonLayoutLeft.Controls.Add(this.button1, 0, 0);
+            this.buttonLayoutLeft.Controls.Add(this.DropperButton, 2, 0);
+            this.buttonLayoutLeft.Controls.Add(this.LoaderButton, 1, 0);
+            this.buttonLayoutLeft.Controls.Add(this.encryptionButton, 0, 0);
             this.buttonLayoutLeft.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.buttonLayoutLeft.Location = new System.Drawing.Point(0, 60);
             this.buttonLayoutLeft.Name = "buttonLayoutLeft";
@@ -225,80 +225,80 @@
             this.buttonLayoutLeft.Size = new System.Drawing.Size(437, 40);
             this.buttonLayoutLeft.TabIndex = 2;
             // 
-            // button3
+            // DropperButton
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
-            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.IconChar = FontAwesome.Sharp.IconChar.Box;
-            this.button3.IconColor = System.Drawing.Color.White;
-            this.button3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.button3.IconSize = 20;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(293, 3);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(141, 34);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Dropper";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.btndropper_click);
+            this.DropperButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.DropperButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DropperButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.DropperButton.FlatAppearance.BorderSize = 0;
+            this.DropperButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DropperButton.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DropperButton.ForeColor = System.Drawing.Color.White;
+            this.DropperButton.IconChar = FontAwesome.Sharp.IconChar.Box;
+            this.DropperButton.IconColor = System.Drawing.Color.White;
+            this.DropperButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.DropperButton.IconSize = 20;
+            this.DropperButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DropperButton.Location = new System.Drawing.Point(293, 3);
+            this.DropperButton.Name = "DropperButton";
+            this.DropperButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.DropperButton.Size = new System.Drawing.Size(141, 34);
+            this.DropperButton.TabIndex = 4;
+            this.DropperButton.Text = "Dropper";
+            this.DropperButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DropperButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.DropperButton.UseVisualStyleBackColor = false;
+            this.DropperButton.Click += new System.EventHandler(this.btndropper_click);
             // 
-            // button2
+            // LoaderButton
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.IconChar = FontAwesome.Sharp.IconChar.Code;
-            this.button2.IconColor = System.Drawing.Color.White;
-            this.button2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.button2.IconSize = 20;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(148, 3);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(139, 34);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Loader";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.btnshellcodeloader_click);
+            this.LoaderButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.LoaderButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LoaderButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.LoaderButton.FlatAppearance.BorderSize = 0;
+            this.LoaderButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LoaderButton.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoaderButton.ForeColor = System.Drawing.Color.White;
+            this.LoaderButton.IconChar = FontAwesome.Sharp.IconChar.Code;
+            this.LoaderButton.IconColor = System.Drawing.Color.White;
+            this.LoaderButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.LoaderButton.IconSize = 20;
+            this.LoaderButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LoaderButton.Location = new System.Drawing.Point(148, 3);
+            this.LoaderButton.Name = "LoaderButton";
+            this.LoaderButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.LoaderButton.Size = new System.Drawing.Size(139, 34);
+            this.LoaderButton.TabIndex = 3;
+            this.LoaderButton.Text = "Loader";
+            this.LoaderButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LoaderButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.LoaderButton.UseVisualStyleBackColor = false;
+            this.LoaderButton.Click += new System.EventHandler(this.btnshellcodeloader_click);
             // 
-            // button1
+            // encryptionButton
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.IconChar = FontAwesome.Sharp.IconChar.Lock;
-            this.button1.IconColor = System.Drawing.Color.White;
-            this.button1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.button1.IconSize = 20;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(139, 34);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Encryptions";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.btnencryptions_Click);
+            this.encryptionButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.encryptionButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.encryptionButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.encryptionButton.FlatAppearance.BorderSize = 0;
+            this.encryptionButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.encryptionButton.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.encryptionButton.ForeColor = System.Drawing.Color.White;
+            this.encryptionButton.IconChar = FontAwesome.Sharp.IconChar.Lock;
+            this.encryptionButton.IconColor = System.Drawing.Color.White;
+            this.encryptionButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.encryptionButton.IconSize = 20;
+            this.encryptionButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.encryptionButton.Location = new System.Drawing.Point(3, 3);
+            this.encryptionButton.Name = "encryptionButton";
+            this.encryptionButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.encryptionButton.Size = new System.Drawing.Size(139, 34);
+            this.encryptionButton.TabIndex = 2;
+            this.encryptionButton.Text = "Encryption";
+            this.encryptionButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.encryptionButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.encryptionButton.UseVisualStyleBackColor = false;
+            this.encryptionButton.Click += new System.EventHandler(this.btnencryptions_Click);
             // 
             // panelLogo
             // 
@@ -373,15 +373,15 @@
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Panel panelMenuRight;
         private System.Windows.Forms.Panel panelMenuLeft;
-        private FontAwesome.Sharp.IconButton button1;
+        private FontAwesome.Sharp.IconButton encryptionButton;
         private System.Windows.Forms.Panel UnderLogo;
         private System.Windows.Forms.TableLayoutPanel buttonLayoutRight;
         private System.Windows.Forms.TableLayoutPanel buttonLayoutLeft;
-        private FontAwesome.Sharp.IconButton button6;
-        private FontAwesome.Sharp.IconButton button5;
-        private FontAwesome.Sharp.IconButton button4;
-        private FontAwesome.Sharp.IconButton button3;
-        private FontAwesome.Sharp.IconButton button2;
+        private FontAwesome.Sharp.IconButton MoreButton;
+        private FontAwesome.Sharp.IconButton StomperButton;
+        private FontAwesome.Sharp.IconButton ObfuscatorButton;
+        private FontAwesome.Sharp.IconButton DropperButton;
+        private FontAwesome.Sharp.IconButton LoaderButton;
         private System.Windows.Forms.Panel panelShadow;
         private System.Windows.Forms.Panel panelDesktop;
         private System.Windows.Forms.Label lblTitleChildForm;

@@ -11,6 +11,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using EncryptionsMain;
+using System.Timers;
 
 namespace PanicWareGui.Forms
 {
@@ -19,9 +20,12 @@ namespace PanicWareGui.Forms
         public FormEncryptions()
         {
             InitializeComponent();
+
+            // btn animation
+            
         }
 
-        private void cook_encryptions_Click(object sender, EventArgs e)
+        private void btncook_Click(object sender, EventArgs e)
         {
             // Get the input plaintext from the PlaintextInputBox
             string plaintext = PlaintextInputBox.Text;
@@ -31,7 +35,6 @@ namespace PanicWareGui.Forms
 
             // Set the encrypted output as the text of the EncryptedOutputBox
             EncryptedOutputBox.Text = encrypted;
-
         }
     }
 }
