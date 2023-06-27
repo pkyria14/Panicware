@@ -45,12 +45,12 @@
             this.btncook = new System.Windows.Forms.Button();
             checkboxEncryptions = new System.Windows.Forms.CheckedListBox();
             cook_encryptions = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(cook_encryptions)).BeginInit();
             this.panelTop.SuspendLayout();
             this.panelLeft.SuspendLayout();
             this.OptionsPanelBottom.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.imgPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(cook_encryptions)).BeginInit();
             this.SuspendLayout();
             // 
             // checkboxEncryptions
@@ -72,16 +72,6 @@
             checkboxEncryptions.RightToLeft = System.Windows.Forms.RightToLeft.No;
             checkboxEncryptions.Size = new System.Drawing.Size(120, 312);
             checkboxEncryptions.TabIndex = 0;
-            // 
-            // cook_encryptions
-            // 
-            cook_encryptions.Image = global::PanicWareGui.Properties.Resources.cooking;
-            cook_encryptions.Location = new System.Drawing.Point(0, 0);
-            cook_encryptions.Name = "cook_encryptions";
-            cook_encryptions.Size = new System.Drawing.Size(192, 100);
-            cook_encryptions.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            cook_encryptions.TabIndex = 4;
-            cook_encryptions.TabStop = false;
             // 
             // panelTop
             // 
@@ -225,21 +215,40 @@
             // 
             // btncook
             // 
+            this.btncook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.btncook.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btncook.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btncook.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btncook.FlatAppearance.BorderSize = 0;
+            this.btncook.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncook.ForeColor = System.Drawing.Color.White;
+            this.btncook.Image = global::PanicWareGui.Properties.Resources.transparent;
             this.btncook.Location = new System.Drawing.Point(0, 106);
             this.btncook.Name = "btncook";
             this.btncook.Size = new System.Drawing.Size(195, 50);
             this.btncook.TabIndex = 5;
             this.btncook.Text = "Cook";
-            this.btncook.UseVisualStyleBackColor = true;
+            this.btncook.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btncook.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btncook.UseVisualStyleBackColor = false;
             this.btncook.Click += new System.EventHandler(this.btncook_Click);
+            // 
+            // cook_encryptions
+            // 
+            cook_encryptions.Dock = System.Windows.Forms.DockStyle.Top;
+            cook_encryptions.Image = global::PanicWareGui.Properties.Resources.cooking;
+            cook_encryptions.Location = new System.Drawing.Point(0, 0);
+            cook_encryptions.Name = "cook_encryptions";
+            cook_encryptions.Size = new System.Drawing.Size(195, 141);
+            cook_encryptions.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            cook_encryptions.TabIndex = 4;
+            cook_encryptions.TabStop = false;
             // 
             // FormEncryptions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(918, 412);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.OptionsPanelBottom);
@@ -248,7 +257,6 @@
             this.Controls.Add(this.panelTop);
             this.Name = "FormEncryptions";
             this.Text = "FormEncryptions";
-            ((System.ComponentModel.ISupportInitialize)(cook_encryptions)).EndInit();
             this.panelTop.ResumeLayout(false);
             this.panelTop.PerformLayout();
             this.panelLeft.ResumeLayout(false);
@@ -256,6 +264,7 @@
             this.OptionsPanelBottom.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.imgPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(cook_encryptions)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -271,9 +280,9 @@
         private System.Windows.Forms.RichTextBox EncryptedOutputBox;
         private System.Windows.Forms.RichTextBox PlaintextInputBox;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Panel imgPanel;
         private System.Windows.Forms.Label lblOutput;
         private System.Windows.Forms.Label lblInput;
+        private System.Windows.Forms.Panel imgPanel;
         private System.Windows.Forms.Button btncook;
     }
 }

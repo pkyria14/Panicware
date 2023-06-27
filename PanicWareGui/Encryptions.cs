@@ -27,7 +27,7 @@ namespace EncryptionsMain
             return encryptedBytes;
         }
 
-        public static string Main(string plaintext)
+        public static string Encrypt(string plaintext)
         {
             string contents = plaintext;
             try

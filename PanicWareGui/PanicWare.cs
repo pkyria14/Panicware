@@ -100,7 +100,7 @@ namespace PanicWareGui
             /*leftBorderBtn.Visible = false;
             iconCurrentChildForm.IconChar = IconChar.Home;
             iconCurrentChildForm.IconColor = Color.MediumPurple;*/
-            lblTitleChildForm.Text = "Home";
+            lblTitleChildForm.Text = "HOME";
         }
         private void logo_Click(object sender, EventArgs e)
         {
@@ -124,6 +124,7 @@ namespace PanicWareGui
         private void btndropper_click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new Forms.FormDropper());
         }
         private void btnobfuscator_click(object sender, EventArgs e)
         {

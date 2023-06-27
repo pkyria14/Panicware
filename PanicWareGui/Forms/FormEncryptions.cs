@@ -19,10 +19,7 @@ namespace PanicWareGui.Forms
     {
         public FormEncryptions()
         {
-            InitializeComponent();
-
-            // btn animation
-            
+            InitializeComponent();            
         }
 
         private void btncook_Click(object sender, EventArgs e)
@@ -31,7 +28,7 @@ namespace PanicWareGui.Forms
             string plaintext = PlaintextInputBox.Text;
 
             // Call the encryption function and get the encrypted output
-            string encrypted = EncryptionsMain.Encryptions.Main(plaintext);   //encryptions.Main(plaintext);
+            string encrypted = EncryptionsMain.Encryptions.Encrypt(plaintext);   //encryptions.Main(plaintext);
 
             // Set the encrypted output as the text of the EncryptedOutputBox
             EncryptedOutputBox.Text = encrypted;

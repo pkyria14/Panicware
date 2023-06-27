@@ -29,45 +29,32 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PanicWare));
-            this.logo = new System.Windows.Forms.PictureBox();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.UnderLogo = new System.Windows.Forms.Panel();
             this.panelMenuRight = new System.Windows.Forms.Panel();
             this.buttonLayoutRight = new System.Windows.Forms.TableLayoutPanel();
+            this.panelMenuLeft = new System.Windows.Forms.Panel();
+            this.buttonLayoutLeft = new System.Windows.Forms.TableLayoutPanel();
+            this.panelLogo = new System.Windows.Forms.Panel();
+            this.panelShadow = new System.Windows.Forms.Panel();
             this.MoreButton = new FontAwesome.Sharp.IconButton();
             this.StomperButton = new FontAwesome.Sharp.IconButton();
             this.ObfuscatorButton = new FontAwesome.Sharp.IconButton();
-            this.panelMenuLeft = new System.Windows.Forms.Panel();
-            this.buttonLayoutLeft = new System.Windows.Forms.TableLayoutPanel();
             this.DropperButton = new FontAwesome.Sharp.IconButton();
             this.LoaderButton = new FontAwesome.Sharp.IconButton();
             this.encryptionButton = new FontAwesome.Sharp.IconButton();
-            this.panelLogo = new System.Windows.Forms.Panel();
-            this.panelShadow = new System.Windows.Forms.Panel();
-            this.panelDesktop = new System.Windows.Forms.Panel();
+            this.logo = new System.Windows.Forms.PictureBox();
             this.lblTitleChildForm = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
+            this.panelDesktop = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panelMenuRight.SuspendLayout();
             this.buttonLayoutRight.SuspendLayout();
             this.panelMenuLeft.SuspendLayout();
             this.buttonLayoutLeft.SuspendLayout();
             this.panelLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.panelDesktop.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // logo
-            // 
-            this.logo.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.logo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.logo.Image = ((System.Drawing.Image)(resources.GetObject("logo.Image")));
-            this.logo.Location = new System.Drawing.Point(437, 0);
-            this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(60, 60);
-            this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.logo.TabIndex = 0;
-            this.logo.TabStop = false;
-            this.logo.Click += new System.EventHandler(this.logo_Click);
             // 
             // panelMenu
             // 
@@ -119,6 +106,55 @@
             this.buttonLayoutRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.buttonLayoutRight.Size = new System.Drawing.Size(437, 40);
             this.buttonLayoutRight.TabIndex = 1;
+            // 
+            // panelMenuLeft
+            // 
+            this.panelMenuLeft.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panelMenuLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.panelMenuLeft.Controls.Add(this.buttonLayoutLeft);
+            this.panelMenuLeft.Location = new System.Drawing.Point(0, 0);
+            this.panelMenuLeft.Name = "panelMenuLeft";
+            this.panelMenuLeft.Size = new System.Drawing.Size(437, 100);
+            this.panelMenuLeft.TabIndex = 2;
+            this.panelMenuLeft.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
+            // 
+            // buttonLayoutLeft
+            // 
+            this.buttonLayoutLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.buttonLayoutLeft.ColumnCount = 3;
+            this.buttonLayoutLeft.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.buttonLayoutLeft.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.buttonLayoutLeft.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.buttonLayoutLeft.Controls.Add(this.DropperButton, 2, 0);
+            this.buttonLayoutLeft.Controls.Add(this.LoaderButton, 1, 0);
+            this.buttonLayoutLeft.Controls.Add(this.encryptionButton, 0, 0);
+            this.buttonLayoutLeft.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.buttonLayoutLeft.Location = new System.Drawing.Point(0, 60);
+            this.buttonLayoutLeft.Name = "buttonLayoutLeft";
+            this.buttonLayoutLeft.RowCount = 1;
+            this.buttonLayoutLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.buttonLayoutLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.buttonLayoutLeft.Size = new System.Drawing.Size(437, 40);
+            this.buttonLayoutLeft.TabIndex = 2;
+            // 
+            // panelLogo
+            // 
+            this.panelLogo.Controls.Add(this.logo);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(934, 60);
+            this.panelLogo.TabIndex = 3;
+            // 
+            // panelShadow
+            // 
+            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelShadow.Location = new System.Drawing.Point(0, 100);
+            this.panelShadow.Name = "panelShadow";
+            this.panelShadow.Size = new System.Drawing.Size(934, 10);
+            this.panelShadow.TabIndex = 2;
+            this.panelShadow.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
             // MoreButton
             // 
@@ -195,36 +231,6 @@
             this.ObfuscatorButton.UseVisualStyleBackColor = false;
             this.ObfuscatorButton.Click += new System.EventHandler(this.btnobfuscator_click);
             // 
-            // panelMenuLeft
-            // 
-            this.panelMenuLeft.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panelMenuLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.panelMenuLeft.Controls.Add(this.buttonLayoutLeft);
-            this.panelMenuLeft.Location = new System.Drawing.Point(0, 0);
-            this.panelMenuLeft.Name = "panelMenuLeft";
-            this.panelMenuLeft.Size = new System.Drawing.Size(437, 100);
-            this.panelMenuLeft.TabIndex = 2;
-            this.panelMenuLeft.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
-            // 
-            // buttonLayoutLeft
-            // 
-            this.buttonLayoutLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
-            this.buttonLayoutLeft.ColumnCount = 3;
-            this.buttonLayoutLeft.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.buttonLayoutLeft.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.buttonLayoutLeft.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.buttonLayoutLeft.Controls.Add(this.DropperButton, 2, 0);
-            this.buttonLayoutLeft.Controls.Add(this.LoaderButton, 1, 0);
-            this.buttonLayoutLeft.Controls.Add(this.encryptionButton, 0, 0);
-            this.buttonLayoutLeft.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.buttonLayoutLeft.Location = new System.Drawing.Point(0, 60);
-            this.buttonLayoutLeft.Name = "buttonLayoutLeft";
-            this.buttonLayoutLeft.RowCount = 1;
-            this.buttonLayoutLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.buttonLayoutLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.buttonLayoutLeft.Size = new System.Drawing.Size(437, 40);
-            this.buttonLayoutLeft.TabIndex = 2;
-            // 
             // DropperButton
             // 
             this.DropperButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
@@ -300,34 +306,19 @@
             this.encryptionButton.UseVisualStyleBackColor = false;
             this.encryptionButton.Click += new System.EventHandler(this.btnencryptions_Click);
             // 
-            // panelLogo
+            // logo
             // 
-            this.panelLogo.Controls.Add(this.logo);
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(934, 60);
-            this.panelLogo.TabIndex = 3;
-            // 
-            // panelShadow
-            // 
-            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelShadow.Location = new System.Drawing.Point(0, 100);
-            this.panelShadow.Name = "panelShadow";
-            this.panelShadow.Size = new System.Drawing.Size(934, 10);
-            this.panelShadow.TabIndex = 2;
-            this.panelShadow.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
-            // 
-            // panelDesktop
-            // 
-            this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.panelDesktop.Controls.Add(this.lblTitleChildForm);
-            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(0, 110);
-            this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(934, 451);
-            this.panelDesktop.TabIndex = 3;
+            this.logo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.logo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.logo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.logo.Image = ((System.Drawing.Image)(resources.GetObject("logo.Image")));
+            this.logo.Location = new System.Drawing.Point(437, 0);
+            this.logo.Name = "logo";
+            this.logo.Size = new System.Drawing.Size(60, 60);
+            this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.logo.TabIndex = 0;
+            this.logo.TabStop = false;
+            this.logo.Click += new System.EventHandler(this.logo_Click);
             // 
             // lblTitleChildForm
             // 
@@ -340,6 +331,16 @@
             this.lblTitleChildForm.Size = new System.Drawing.Size(95, 33);
             this.lblTitleChildForm.TabIndex = 0;
             this.lblTitleChildForm.Text = "HOME";
+            // 
+            // panelDesktop
+            // 
+            this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.panelDesktop.Controls.Add(this.lblTitleChildForm);
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktop.Location = new System.Drawing.Point(0, 110);
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Size = new System.Drawing.Size(934, 451);
+            this.panelDesktop.TabIndex = 3;
             // 
             // PanicWare
             // 
@@ -354,13 +355,13 @@
             this.Name = "PanicWare";
             this.Text = "PanicWare";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.panelMenu.ResumeLayout(false);
             this.panelMenuRight.ResumeLayout(false);
             this.buttonLayoutRight.ResumeLayout(false);
             this.panelMenuLeft.ResumeLayout(false);
             this.buttonLayoutLeft.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.panelDesktop.ResumeLayout(false);
             this.panelDesktop.PerformLayout();
             this.ResumeLayout(false);
@@ -383,8 +384,8 @@
         private FontAwesome.Sharp.IconButton DropperButton;
         private FontAwesome.Sharp.IconButton LoaderButton;
         private System.Windows.Forms.Panel panelShadow;
-        private System.Windows.Forms.Panel panelDesktop;
         private System.Windows.Forms.Label lblTitleChildForm;
+        private System.Windows.Forms.Panel panelDesktop;
     }
 }
 

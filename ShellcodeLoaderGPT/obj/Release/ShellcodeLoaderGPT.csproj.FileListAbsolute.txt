@@ -1,0 +1,8 @@
+C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\ShellcodeLoaderGPT\bin\Release\ShellcodeLoaderGPT.exe.config
+C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\ShellcodeLoaderGPT\bin\Release\ShellcodeLoaderGPT.exe
+C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\ShellcodeLoaderGPT\bin\Release\ShellcodeLoaderGPT.pdb
+C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\ShellcodeLoaderGPT\obj\Release\ShellcodeLoaderGPT.csproj.AssemblyReference.cache
+C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\ShellcodeLoaderGPT\obj\Release\ShellcodeLoaderGPT.csproj.SuggestedBindingRedirects.cache
+C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\ShellcodeLoaderGPT\obj\Release\ShellcodeLoaderGPT.csproj.CoreCompileInputs.cache
+C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\ShellcodeLoaderGPT\obj\Release\ShellcodeLoaderGPT.exe
+C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\ShellcodeLoaderGPT\obj\Release\ShellcodeLoaderGPT.pdb

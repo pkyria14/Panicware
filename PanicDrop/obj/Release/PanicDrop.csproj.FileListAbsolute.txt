@@ -1,0 +1,8 @@
+C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\PanicDrop\bin\Release\PanicDrop.exe.config
+C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\PanicDrop\bin\Release\PanicDrop.exe
+C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\PanicDrop\bin\Release\PanicDrop.pdb
+C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\PanicDrop\obj\Release\PanicDrop.csproj.AssemblyReference.cache
+C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\PanicDrop\obj\Release\PanicDrop.csproj.SuggestedBindingRedirects.cache
+C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\PanicDrop\obj\Release\PanicDrop.csproj.CoreCompileInputs.cache
+C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\PanicDrop\obj\Release\PanicDrop.exe
+C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\PanicDrop\obj\Release\PanicDrop.pdb
