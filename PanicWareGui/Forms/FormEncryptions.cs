@@ -33,5 +33,18 @@ namespace PanicWareGui.Forms
             // Set the encrypted output as the text of the EncryptedOutputBox
             EncryptedOutputBox.Text = encrypted;
         }
+
+        private void btn_file_to_encrypt(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Binary Files (*.bin)|*.bin"; // Specify the file filter if needed
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string selectedFilePath = openFileDialog.FileName;
+                // Process the selected file here (e.g., read its contents)
+                // You can pass the selectedFilePath to your encryption function or store it for later use
+            }
+        }
     }
 }
