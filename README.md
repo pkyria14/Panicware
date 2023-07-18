@@ -24,15 +24,15 @@ Graphical User Interface for that will wrap the whole process together in a nice
 ## TODO
 For encryption: 
 - [x] Create a button to choose a file from directory.
-- [] Read chosen file contents and pass them for encryption.
-- [] Make encryption algorithms (RC4,AES,EKKO sleep obf).
-- [] Fix buttons to choose encryption algorithm to work.
+- [ ] Read chosen file contents and pass them for encryption.
+- [ ] Make encryption algorithms (RC4,AES,EKKO sleep obf).
+- [ ] Fix buttons to choose encryption algorithm to work.
 
 For shellcodeloader:
-- [] Give different choices of loading the payload.
+- [ ] Give different choices of loading the payload.
 
 Extra:
-- Experiment with techniques (Dll sideloads, clickonce, appdomain injections)
+- [ ] Experiment with techniques (Dll sideloads, clickonce, appdomain injections)
 
 ### Note
 These projects are for educational purposes only and should not be used for any malicious activities.
