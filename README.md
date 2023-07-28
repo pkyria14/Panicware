@@ -13,10 +13,10 @@ Features:
 The Encryptions project provides a simple way to encrypt any code (not just shellcode) using an algorithm of your choice for encryption. The resulting output can be passed to the Shellcodeloader project for deployment.
 
 ### How to Use
-- Clone the repository and open the Encryptions.sln solution file in Visual Studio.
+- Clone the repository and open the solution file in Visual Studio.
 - Build the solution to generate the executable.
 - Use the simple GUI to make your moves.
-- The output will be created on the same directory.
+- The output will be created on your chosen directory.
 
 ## ShellcodeloaderGui (Work in progress)
 Graphical User Interface for that will wrap the whole process together in a nice neet way that will be fun and easy to use.

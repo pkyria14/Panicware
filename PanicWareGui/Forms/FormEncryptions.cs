@@ -27,9 +27,21 @@ namespace PanicWareGui.Forms
             // Get the input plaintext from the PlaintextInputBox
             string plaintext = PlaintextInputBox.Text;
 
-            // Call the encryption function and get the encrypted output
+            // ----
+
+            // Check if encryption algorithm was selected
+            // If not print error
+
+            // Check if output format was selected
+            // If not print error
+
+            // Call the chosen encryption function
             string encrypted = EncryptionsMain.Encryptions.Encrypt(plaintext);   //encryptions.Main(plaintext);
 
+            // Prompt to choose where to ouput the processed file
+
+            // Output the file in the directory of the user's choice
+            // ----
             // Set the encrypted output as the text of the EncryptedOutputBox
             EncryptedOutputBox.Text = encrypted;
         }
@@ -46,6 +58,5 @@ namespace PanicWareGui.Forms
                 // You can pass the selectedFilePath to your encryption function or store it for later use
             }
         }
-
     }
 }
