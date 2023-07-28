@@ -8,19 +8,24 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\pkyriakou\\.nuget\\packages\\": {}
+    "C:\\Users\\kyria\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pkyriakou\\source\\repos\\Panicware\\windowsupdate\\windowsupdate.csproj",
+      "projectUniqueName": "C:\\Users\\kyria\\Desktop\\github\\ShellcodeLoaderGPT\\windowsupdate\\windowsupdate.csproj",
       "projectName": "windowsupdate",
-      "projectPath": "C:\\Users\\pkyriakou\\source\\repos\\Panicware\\windowsupdate\\windowsupdate.csproj",
-      "packagesPath": "C:\\Users\\pkyriakou\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pkyriakou\\source\\repos\\Panicware\\windowsupdate\\obj\\",
+      "projectPath": "C:\\Users\\kyria\\Desktop\\github\\ShellcodeLoaderGPT\\windowsupdate\\windowsupdate.csproj",
+      "packagesPath": "C:\\Users\\kyria\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kyria\\Desktop\\github\\ShellcodeLoaderGPT\\windowsupdate\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\pkyriakou\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kyria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

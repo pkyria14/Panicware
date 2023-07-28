@@ -19,7 +19,7 @@ namespace PanicWareGui.Forms
     {
         public FormEncryptions()
         {
-            InitializeComponent();            
+            InitializeComponent();
         }
 
         private void btncook_Click(object sender, EventArgs e)
@@ -46,5 +46,6 @@ namespace PanicWareGui.Forms
                 // You can pass the selectedFilePath to your encryption function or store it for later use
             }
         }
+
     }
 }
