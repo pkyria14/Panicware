@@ -1,6 +1,6 @@
 .gitignore
 .git
 .gitattributes
-.vs
+.vs/
 packages
 PanicWareGui/bin/
