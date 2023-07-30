@@ -1,8 +1,0 @@
-C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\ModuleStomping\bin\Debug\ModuleStomping.exe.config
-C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\ModuleStomping\bin\Debug\ModuleStomping.exe
-C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\ModuleStomping\bin\Debug\ModuleStomping.pdb
-C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\ModuleStomping\obj\Debug\ModuleStomping.csproj.AssemblyReference.cache
-C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\ModuleStomping\obj\Debug\ModuleStomping.csproj.SuggestedBindingRedirects.cache
-C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\ModuleStomping\obj\Debug\ModuleStomping.csproj.CoreCompileInputs.cache
-C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\ModuleStomping\obj\Debug\ModuleStomping.exe
-C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\ModuleStomping\obj\Debug\ModuleStomping.pdb
