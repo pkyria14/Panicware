@@ -27,7 +27,7 @@ namespace PanicWareGui.Forms
         private void btncook_Click(object sender, EventArgs e)
         {
             // Get the input plaintext from the PlaintextInputBox
-            string plaintext = PlaintextInputBox.Text;
+            //string plaintext = PlaintextInputBox.Text;
 
             // ----
 
@@ -38,14 +38,14 @@ namespace PanicWareGui.Forms
             // If not print error
 
             // Call the chosen encryption function
-            string encrypted = EncryptionsMain.Encryptions.Encrypt(plaintext);   //encryptions.Main(plaintext);
+            //string encrypted = EncryptionsMain.Encryptions.Encrypt(plaintext);   //encryptions.Main(plaintext);
 
             // Prompt to choose where to ouput the processed file
 
             // Output the file in the directory of the user's choice
             // ----
             // Set the encrypted output as the text of the EncryptedOutputBox
-            EncryptedOutputBox.Text = encrypted;
+            //EncryptedOutputBox.Text = encrypted;
         }
 
         private void btn_file_to_encrypt(object sender, EventArgs e)

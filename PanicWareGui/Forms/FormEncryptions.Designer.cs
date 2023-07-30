@@ -51,8 +51,6 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.imgPanel = new System.Windows.Forms.Panel();
             this.btncook = new System.Windows.Forms.Button();
-            this.EncryptedOutputBox = new System.Windows.Forms.RichTextBox();
-            this.PlaintextInputBox = new System.Windows.Forms.RichTextBox();
             cook_encryptions = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(cook_encryptions)).BeginInit();
             this.panelTop.SuspendLayout();
@@ -332,9 +330,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.Controls.Add(this.EncryptedOutputBox, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.imgPanel, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.PlaintextInputBox, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(140, 100);
@@ -372,30 +368,6 @@
             this.btncook.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btncook.UseVisualStyleBackColor = false;
             this.btncook.Click += new System.EventHandler(this.btncook_Click);
-            // 
-            // EncryptedOutputBox
-            // 
-            this.EncryptedOutputBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
-            this.EncryptedOutputBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.EncryptedOutputBox.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EncryptedOutputBox.ForeColor = System.Drawing.Color.White;
-            this.EncryptedOutputBox.Location = new System.Drawing.Point(423, 3);
-            this.EncryptedOutputBox.Name = "EncryptedOutputBox";
-            this.EncryptedOutputBox.Size = new System.Drawing.Size(78, 62);
-            this.EncryptedOutputBox.TabIndex = 1;
-            this.EncryptedOutputBox.Text = "";
-            // 
-            // PlaintextInputBox
-            // 
-            this.PlaintextInputBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
-            this.PlaintextInputBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.PlaintextInputBox.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.PlaintextInputBox.ForeColor = System.Drawing.Color.White;
-            this.PlaintextInputBox.Location = new System.Drawing.Point(3, 3);
-            this.PlaintextInputBox.Name = "PlaintextInputBox";
-            this.PlaintextInputBox.Size = new System.Drawing.Size(83, 72);
-            this.PlaintextInputBox.TabIndex = 0;
-            this.PlaintextInputBox.Text = "";
             // 
             // FormEncryptions
             // 
@@ -450,7 +422,5 @@
         private System.Windows.Forms.RadioButton radioDll;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RadioButton radioEkko;
-        private System.Windows.Forms.RichTextBox EncryptedOutputBox;
-        private System.Windows.Forms.RichTextBox PlaintextInputBox;
     }
 }
