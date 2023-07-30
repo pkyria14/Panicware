@@ -1,0 +1,5 @@
+.git
+.gitattributes
+.vs
+packages
+PanicWareGui/bin/

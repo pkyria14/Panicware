@@ -1,6 +1,6 @@
 # Panicware Suite
 
-![panicware encryption tab](images/panicware_encryption.png)
+![panicware encryption tab](Resources/images/panicware_encryption.png)
 
 This repository contains C# projects that are designed to work together to provide a full payload encryption and deployment system.
 
