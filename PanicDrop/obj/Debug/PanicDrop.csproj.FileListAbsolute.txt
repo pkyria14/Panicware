@@ -6,3 +6,10 @@ C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\PanicDrop\obj\Debug\PanicDrop.c
 C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\PanicDrop\obj\Debug\PanicDrop.csproj.CoreCompileInputs.cache
 C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\PanicDrop\obj\Debug\PanicDrop.exe
 C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\PanicDrop\obj\Debug\PanicDrop.pdb
+C:\Users\kyria\Desktop\github\Panicware\PanicDrop\bin\Debug\PanicDrop.exe.config
+C:\Users\kyria\Desktop\github\Panicware\PanicDrop\bin\Debug\PanicDrop.exe
+C:\Users\kyria\Desktop\github\Panicware\PanicDrop\bin\Debug\PanicDrop.pdb
+C:\Users\kyria\Desktop\github\Panicware\PanicDrop\obj\Debug\PanicDrop.csproj.AssemblyReference.cache
+C:\Users\kyria\Desktop\github\Panicware\PanicDrop\obj\Debug\PanicDrop.csproj.CoreCompileInputs.cache
+C:\Users\kyria\Desktop\github\Panicware\PanicDrop\obj\Debug\PanicDrop.exe
+C:\Users\kyria\Desktop\github\Panicware\PanicDrop\obj\Debug\PanicDrop.pdb

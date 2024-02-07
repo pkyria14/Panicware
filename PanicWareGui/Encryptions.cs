@@ -10,66 +10,28 @@ namespace EncryptionsMain
 {
     public class Encryptions
     {
-        static byte[] XOR(byte[] inputBytes)
+        public static string radioXOR(string plaintext, string xor_key)
         {
-            // Constant key 
-            byte[] keyBytes = new byte[] { 0xAB, 0xCD, 0xEF, 0x54, 0xde, 0xad, 0xbe, 0xef };
-
-            // Create a new byte array to store the encrypted data
-            byte[] encryptedBytes = new byte[inputBytes.Length];
-
-            // Apply XOR operation to each byte in inputBytes using corresponding byte in keyBytes
-            for (int i = 0; i < inputBytes.Length; i++)
-            {
-                encryptedBytes[i] = (byte)(inputBytes[i] ^ keyBytes[i % keyBytes.Length]);
-            }
-
-            return encryptedBytes;
+            return plaintext;
+        }
+        public static string radioAES256(string plaintext, string aes_key)
+        {
+            return plaintext;
         }
 
-        public static string Encrypt(string plaintext)
+        public static string radioRC4(string plaintext, string RC4_key)
         {
-            string contents = plaintext;
-            try
-            {
-                // Read all bytes from the file
-                /*using (StreamReader reader = new StreamReader("C:\\Users\\kyria\\Desktop\\github\\ShellcodeLoaderGPT\\Encryptions\\payload.txt", Encoding.GetEncoding("UTF-8"), true))
-                {
-                    contents = reader.ReadToEnd();
-                }*/
+            return plaintext;
+        }
 
-                string[] hexValues = contents.Split(',');
-                byte[] rawcode = new byte[hexValues.Length];
+        public static string radioEkko(string plaintext, string ekko_key)
+        {
+            return plaintext;
+        }
 
-                for (int i = 0; i < hexValues.Length; i++)
-                {
-                    rawcode[i] = Convert.ToByte(hexValues[i], 16);
-                }
-
-                // Xor encryption
-                byte[] output = XOR(rawcode);
-
-                // Base64 encoding
-                string bxoredstring = Convert.ToBase64String(output);
-
-                /* Write the output in the output.txt
-                using (StreamWriter sw = new StreamWriter("C:\\Users\\kyria\\Desktop\\base64.txt"))
-                {
-                    sw.WriteLine(bxoredstring);
-                }
-                */
-                return bxoredstring;
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("Exception: " + e.Message);
-            }
-            finally
-            {
-                Console.WriteLine("Process completed");
-            }
-
-            return "Encryption Error!";
+        public static string radioBase64(string plaintext)
+        {
+            return plaintext;
         }
     }
 }
