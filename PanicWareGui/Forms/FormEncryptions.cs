@@ -28,26 +28,85 @@ namespace PanicWareGui.Forms
 
         private void btncook_Click(object sender, EventArgs e)
         {
-            // Get the input plaintext from the PlaintextInputBox
-            //string plaintext = PlaintextInputBox.Text;
+            // Check if a file was selected
+            if (string.IsNullOrEmpty(selectedFilePath))
+            {
+                MessageBox.Show("Please select a file first.", "No File Selected", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
-            // ----
+            // Check if an encryption algorithm was selected
+            if (!radioAes256.Checked && !radioRc4.Checked && !radioXor.Checked && !radioEkko.Checked && !radioBase64.Checked)
+            {
+                MessageBox.Show("Please select an encryption algorithm.", "No Algorithm Selected", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
-            // Check if encryption algorithm was selected
-            // If not print error
+            // Check if an output format was selected
+            string outputFormat = "";
+            if (radioDll.Checked)
+            {
+                outputFormat = "DLL";
+            }
+            else if (radioRaw.Checked)
+            {
+                outputFormat = "RAW";
+            }
+            else if (radioExe.Checked)
+            {
+                outputFormat = "EXE";
+            }
+            else if (radioElf.Checked)
+            {
+                outputFormat = "ELF";
+            }
+            else
+            {
+                MessageBox.Show("Please select an output format.", "No Output Format Selected", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
-            // Check if output format was selected
-            // If not print error
+            string fileContent = File.ReadAllText(selectedFilePath);
+            string encryptedContent = "";
+            string algorithmName = "";
 
-            // Call the chosen encryption function
-            //string encrypted = EncryptionsMain.Encryptions.Encrypt(plaintext);   //encryptions.Main(plaintext);
+            if (radioAes256.Checked)
+            {
+                algorithmName = "AES-256";
+                string aes_key = GetUserKey();
+                encryptedContent = Encryptions.radioAES256(fileContent, aes_key, outputFormat);
+            }
+            else if (radioRc4.Checked)
+            {
+                algorithmName = "RC4";
+                string rc4_key = GetUserKey();
+                encryptedContent = Encryptions.radioRC4(fileContent, rc4_key, outputFormat);
+            }
+            else if (radioXor.Checked)
+            {
+                algorithmName = "XOR";
+                string xor_key = GetUserKey();
+                encryptedContent = Encryptions.radioXOR(fileContent, xor_key, outputFormat);
+            }
+            else if (radioEkko.Checked)
+            {
+                algorithmName = "Ekko";
+                string ekko_key = GetUserKey();
+                encryptedContent = Encryptions.radioEkko(fileContent, ekko_key, outputFormat);
+            }
+            else if (radioBase64.Checked)
+            {
+                algorithmName = "Base64";
+                encryptedContent = Encryptions.radioBase64(fileContent, outputFormat);
+            }
+            else
+            {
+                MessageBox.Show("Please select an encryption algorithm.", "No Algorithm Selected", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
-            // Prompt to choose where to ouput the processed file
-
-            // Output the file in the directory of the user's choice
-            // ----
-            // Set the encrypted output as the text of the EncryptedOutputBox
-            //EncryptedOutputBox.Text = encrypted;
+            // Save the encrypted content to a file
+            SaveEncryptedContent(encryptedContent, algorithmName, selectedFilePath);
         }
 
         private void btn_file_to_encrypt(object sender, EventArgs e)
@@ -57,51 +116,12 @@ namespace PanicWareGui.Forms
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                string selectedFilePath = openFileDialog.FileName;
-                string fileContent = File.ReadAllText(selectedFilePath);
-
-                // Determine which encryption algorithm is selected
-                string encryptedContent = "";
-                string algorithmName = "";
-                String aes_key, rc4_key, xor_key, ekko_key = "";
-
-                if (radioAes256.Checked)
-                {
-                    algorithmName = "AES256";
-                    aes_key = GetUserKey();
-                    encryptedContent = Encryptions.radioAES256(fileContent, aes_key);
-                }
-                else if (radioRc4.Checked)
-                {
-                    algorithmName = "RC4";
-                    rc4_key = GetUserKey();
-                    encryptedContent = Encryptions.radioRC4(fileContent, rc4_key);
-                }
-                else if (radioXor.Checked)
-                {
-                    algorithmName = "XOR";
-                    xor_key = GetUserKey();
-                    encryptedContent = Encryptions.radioXOR(fileContent, xor_key);
-                }
-                else if (radioEkko.Checked)
-                {
-                    algorithmName = "Ekko";
-                    ekko_key = GetUserKey();
-                    encryptedContent = Encryptions.radioEkko(fileContent, ekko_key);
-                }
-                // Add other conditions for each supported algorithm
-                else if (radioBase64.Checked)
-                {
-                    encryptedContent = Encryptions.radioBase64(fileContent);
-                }
-                // You'll need to implement EncryptWithRC4, EncryptWithXOR, etc., and ConvertToBase64 based on your needs
-
-                // Save the encrypted content to a file
-                SaveEncryptedContent(encryptedContent, algorithmName, selectedFilePath);
+                selectedFilePath = openFileDialog.FileName;
+                btnFileToEncrypt.Text = Path.GetFileName(selectedFilePath);
             }
             else
             {
-                MessageBox.Show("Please select a file to encrypt first.", "No File Selected", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                btnFileToEncrypt.Text = "No file selected.";
             }
         }
 

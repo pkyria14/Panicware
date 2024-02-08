@@ -14,10 +14,3 @@ C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\ShellcodeLoaderGPT\obj\Debug\Sh
 C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\ShellcodeLoaderGPT\obj\Debug\ShellcodeLoaderGPT.csproj.CoreCompileInputs.cache
 C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\ShellcodeLoaderGPT\obj\Debug\ShellcodeLoaderGPT.exe
 C:\Users\kyria\Desktop\github\ShellcodeLoaderGPT\ShellcodeLoaderGPT\obj\Debug\ShellcodeLoaderGPT.pdb
-C:\Users\kyria\Desktop\github\Panicware\ShellcodeLoaderGPT\bin\Debug\ShellcodeLoaderGPT.exe.config
-C:\Users\kyria\Desktop\github\Panicware\ShellcodeLoaderGPT\bin\Debug\ShellcodeLoaderGPT.exe
-C:\Users\kyria\Desktop\github\Panicware\ShellcodeLoaderGPT\bin\Debug\ShellcodeLoaderGPT.pdb
-C:\Users\kyria\Desktop\github\Panicware\ShellcodeLoaderGPT\obj\Debug\ShellcodeLoaderGPT.csproj.AssemblyReference.cache
-C:\Users\kyria\Desktop\github\Panicware\ShellcodeLoaderGPT\obj\Debug\ShellcodeLoaderGPT.csproj.CoreCompileInputs.cache
-C:\Users\kyria\Desktop\github\Panicware\ShellcodeLoaderGPT\obj\Debug\ShellcodeLoaderGPT.exe
-C:\Users\kyria\Desktop\github\Panicware\ShellcodeLoaderGPT\obj\Debug\ShellcodeLoaderGPT.pdb
