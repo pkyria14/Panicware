@@ -14,6 +14,7 @@ using EncryptionsMain;
 using System.Timers;
 using System.IO;
 using System.Security.Cryptography;
+using System.Globalization;
 
 namespace PanicWareGui.Forms
 {
@@ -36,7 +37,7 @@ namespace PanicWareGui.Forms
             }
 
             // Check if an encryption algorithm was selected
-            if (!radioAes256.Checked && !radioRc4.Checked && !radioXor.Checked && !radioEkko.Checked && !radioBase64.Checked)
+            if (!radioAes256.Checked && !radioRc4.Checked && !radioXor.Checked && !radioBase64.Checked)
             {
                 MessageBox.Show("Please select an encryption algorithm.", "No Algorithm Selected", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -66,11 +67,11 @@ namespace PanicWareGui.Forms
                 return;
             }
 
-            string fileContent = File.ReadAllText(selectedFilePath);
-            string encryptedContent = "";
+            byte[] fileContent = File.ReadAllBytes(selectedFilePath);
+            byte[] encryptedContent = null; // Initialize as byte array
             string algorithmName = "";
 
-            if (radioAes256.Checked)
+            /*if (radioAes256.Checked)
             {
                 algorithmName = "AES-256";
                 string aes_key = GetUserKey();
@@ -81,24 +82,18 @@ namespace PanicWareGui.Forms
                 algorithmName = "RC4";
                 string rc4_key = GetUserKey();
                 encryptedContent = Encryptions.radioRC4(fileContent, rc4_key, outputFormat);
-            }
-            else if (radioXor.Checked)
+            }*/
+            if (radioXor.Checked)
             {
                 algorithmName = "XOR";
                 string xor_key = GetUserKey();
-                encryptedContent = Encryptions.radioXOR(fileContent, xor_key, outputFormat);
+                encryptedContent = Encryptions.radioXOR(fileContent, xor_key);
             }
-            else if (radioEkko.Checked)
-            {
-                algorithmName = "Ekko";
-                string ekko_key = GetUserKey();
-                encryptedContent = Encryptions.radioEkko(fileContent, ekko_key, outputFormat);
-            }
-            else if (radioBase64.Checked)
+            /*else if (radioBase64.Checked)
             {
                 algorithmName = "Base64";
                 encryptedContent = Encryptions.radioBase64(fileContent, outputFormat);
-            }
+            }*/
             else
             {
                 MessageBox.Show("Please select an encryption algorithm.", "No Algorithm Selected", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -107,6 +102,32 @@ namespace PanicWareGui.Forms
 
             // Save the encrypted content to a file
             SaveEncryptedContent(encryptedContent, algorithmName, selectedFilePath);
+
+            // Pseudo-code for embedding encrypted content into the template executable
+            // This would be a manual step or an advanced automated step
+            EmbedPayloadInTemplateExecutable(encryptedContent);
+
+            // Pseudo-code for compiling the template project to produce the final executable
+            // This step is also either manual or requires advanced automation
+            CompileTemplateExecutable();
+        }
+
+        void EmbedPayloadInTemplateExecutable(byte[] payload)
+        {
+            // Manual step: Add payload as a resource to the template project
+            // or use command-line tools/MSBuild to automate
+        }
+
+        void CompileTemplateExecutable()
+        {
+            // Manual step: Compile the project from Visual Studio or command line
+            // or use MSBuild automation from within this application
+        }
+
+        public static byte[] DecryptData(byte[] fileContent, string xor_key)
+        {
+            // Assuming you have the XorEncryptDecrypt method defined
+            return Encryptions.radioXOR(fileContent, xor_key);
         }
 
         private void btn_file_to_encrypt(object sender, EventArgs e)
@@ -134,7 +155,7 @@ namespace PanicWareGui.Forms
         }
 
         // Example: Save encrypted content to a file
-        private void SaveEncryptedContent(string encryptedContent, string algorithmName, string originalFilePath)
+        private void SaveEncryptedContent(byte[] encryptedContent, string algorithmName, string originalFilePath)
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
             saveFileDialog.Filter = "Encrypted File (*.enc)|*.enc";
@@ -142,7 +163,7 @@ namespace PanicWareGui.Forms
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
                 string savePath = saveFileDialog.FileName;
-                File.WriteAllText(savePath, encryptedContent);
+                File.WriteAllBytes(savePath, encryptedContent);
 
                 // Optionally, show the file in Explorer
                 System.Diagnostics.Process.Start("explorer.exe", "/select, \"" + savePath + "\"");

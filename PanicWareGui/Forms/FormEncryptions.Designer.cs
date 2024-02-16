@@ -36,7 +36,6 @@
             this.lblInput = new System.Windows.Forms.Label();
             this.panelLeft = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.radioEkko = new System.Windows.Forms.RadioButton();
             this.radioAes256 = new System.Windows.Forms.RadioButton();
             this.radioBase64 = new System.Windows.Forms.RadioButton();
             this.radioRc4 = new System.Windows.Forms.RadioButton();
@@ -44,29 +43,25 @@
             this.OptionsPanelBottom = new System.Windows.Forms.Panel();
             this.btnFileToEncrypt = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.RightPanelForLaterUsage = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.radioElf = new System.Windows.Forms.RadioButton();
-            this.radioExe = new System.Windows.Forms.RadioButton();
-            this.radioRaw = new System.Windows.Forms.RadioButton();
-            this.radioDll = new System.Windows.Forms.RadioButton();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.imgPanel = new System.Windows.Forms.Panel();
             this.btncook = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.radioElf = new System.Windows.Forms.RadioButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.radioExe = new System.Windows.Forms.RadioButton();
+            this.radioRaw = new System.Windows.Forms.RadioButton();
+            this.radioDll = new System.Windows.Forms.RadioButton();
+            this.RightPanelForLaterUsage = new System.Windows.Forms.Panel();
             cook_encryptions = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(cook_encryptions)).BeginInit();
             this.panelTop.SuspendLayout();
             this.panelLeft.SuspendLayout();
             this.panel2.SuspendLayout();
             this.OptionsPanelBottom.SuspendLayout();
-            this.RightPanelForLaterUsage.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.imgPanel.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.RightPanelForLaterUsage.SuspendLayout();
             this.SuspendLayout();
             // 
             // cook_encryptions
@@ -151,7 +146,6 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.radioEkko);
             this.panel2.Controls.Add(this.radioAes256);
             this.panel2.Controls.Add(this.radioBase64);
             this.panel2.Controls.Add(this.radioRc4);
@@ -161,20 +155,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(117, 312);
             this.panel2.TabIndex = 1;
-            // 
-            // radioEkko
-            // 
-            this.radioEkko.AutoSize = true;
-            this.radioEkko.Dock = System.Windows.Forms.DockStyle.Top;
-            this.radioEkko.Font = new System.Drawing.Font("Century Gothic", 13F);
-            this.radioEkko.ForeColor = System.Drawing.Color.White;
-            this.radioEkko.Location = new System.Drawing.Point(0, 100);
-            this.radioEkko.Name = "radioEkko";
-            this.radioEkko.Size = new System.Drawing.Size(117, 25);
-            this.radioEkko.TabIndex = 16;
-            this.radioEkko.TabStop = true;
-            this.radioEkko.Text = "Ekko";
-            this.radioEkko.UseVisualStyleBackColor = true;
             // 
             // radioAes256
             // 
@@ -272,84 +252,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Options";
             // 
-            // RightPanelForLaterUsage
-            // 
-            this.RightPanelForLaterUsage.Controls.Add(this.panel3);
-            this.RightPanelForLaterUsage.Controls.Add(this.panel1);
-            this.RightPanelForLaterUsage.Dock = System.Windows.Forms.DockStyle.Right;
-            this.RightPanelForLaterUsage.Location = new System.Drawing.Point(770, 100);
-            this.RightPanelForLaterUsage.Name = "RightPanelForLaterUsage";
-            this.RightPanelForLaterUsage.Size = new System.Drawing.Size(148, 312);
-            this.RightPanelForLaterUsage.TabIndex = 5;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.radioExe);
-            this.panel1.Controls.Add(this.radioRaw);
-            this.panel1.Controls.Add(this.radioDll);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(148, 162);
-            this.panel1.TabIndex = 0;
-            // 
-            // radioElf
-            // 
-            this.radioElf.AutoSize = true;
-            this.radioElf.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radioElf.Font = new System.Drawing.Font("Century Gothic", 13F);
-            this.radioElf.ForeColor = System.Drawing.Color.White;
-            this.radioElf.Location = new System.Drawing.Point(0, 0);
-            this.radioElf.Name = "radioElf";
-            this.radioElf.Size = new System.Drawing.Size(145, 150);
-            this.radioElf.TabIndex = 16;
-            this.radioElf.TabStop = true;
-            this.radioElf.Text = "elf";
-            this.radioElf.UseVisualStyleBackColor = true;
-            // 
-            // radioExe
-            // 
-            this.radioExe.AutoSize = true;
-            this.radioExe.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.radioExe.Font = new System.Drawing.Font("Century Gothic", 13F);
-            this.radioExe.ForeColor = System.Drawing.Color.White;
-            this.radioExe.Location = new System.Drawing.Point(0, 87);
-            this.radioExe.Name = "radioExe";
-            this.radioExe.Size = new System.Drawing.Size(148, 25);
-            this.radioExe.TabIndex = 14;
-            this.radioExe.TabStop = true;
-            this.radioExe.Text = "exe";
-            this.radioExe.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.radioExe.UseVisualStyleBackColor = true;
-            // 
-            // radioRaw
-            // 
-            this.radioRaw.AutoSize = true;
-            this.radioRaw.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.radioRaw.Font = new System.Drawing.Font("Century Gothic", 13F);
-            this.radioRaw.ForeColor = System.Drawing.Color.White;
-            this.radioRaw.Location = new System.Drawing.Point(0, 112);
-            this.radioRaw.Name = "radioRaw";
-            this.radioRaw.Size = new System.Drawing.Size(148, 25);
-            this.radioRaw.TabIndex = 15;
-            this.radioRaw.TabStop = true;
-            this.radioRaw.Text = "raw";
-            this.radioRaw.UseVisualStyleBackColor = true;
-            // 
-            // radioDll
-            // 
-            this.radioDll.AutoSize = true;
-            this.radioDll.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.radioDll.Font = new System.Drawing.Font("Century Gothic", 13F);
-            this.radioDll.ForeColor = System.Drawing.Color.White;
-            this.radioDll.Location = new System.Drawing.Point(0, 137);
-            this.radioDll.Name = "radioDll";
-            this.radioDll.Size = new System.Drawing.Size(148, 25);
-            this.radioDll.TabIndex = 13;
-            this.radioDll.TabStop = true;
-            this.radioDll.Text = "dll";
-            this.radioDll.UseVisualStyleBackColor = true;
-            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 3;
@@ -395,36 +297,83 @@
             this.btncook.UseVisualStyleBackColor = false;
             this.btncook.Click += new System.EventHandler(this.btncook_Click);
             // 
-            // label3
+            // radioElf
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 14F);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(32, 3);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 22);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Windows";
+            this.radioElf.AutoSize = true;
+            this.radioElf.Dock = System.Windows.Forms.DockStyle.Top;
+            this.radioElf.Font = new System.Drawing.Font("Century Gothic", 13F);
+            this.radioElf.ForeColor = System.Drawing.Color.White;
+            this.radioElf.Location = new System.Drawing.Point(0, 50);
+            this.radioElf.Name = "radioElf";
+            this.radioElf.Size = new System.Drawing.Size(148, 25);
+            this.radioElf.TabIndex = 16;
+            this.radioElf.TabStop = true;
+            this.radioElf.Text = "elf";
+            this.radioElf.UseVisualStyleBackColor = true;
             // 
-            // panel3
+            // panel1
             // 
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.radioElf);
-            this.panel3.Location = new System.Drawing.Point(3, 162);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(145, 150);
-            this.panel3.TabIndex = 17;
+            this.panel1.Controls.Add(this.radioExe);
+            this.panel1.Controls.Add(this.radioElf);
+            this.panel1.Controls.Add(this.radioRaw);
+            this.panel1.Controls.Add(this.radioDll);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(148, 312);
+            this.panel1.TabIndex = 0;
             // 
-            // label4
+            // radioExe
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 14F);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(47, 15);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 22);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Linux";
+            this.radioExe.AutoSize = true;
+            this.radioExe.Dock = System.Windows.Forms.DockStyle.Top;
+            this.radioExe.Font = new System.Drawing.Font("Century Gothic", 13F);
+            this.radioExe.ForeColor = System.Drawing.Color.White;
+            this.radioExe.Location = new System.Drawing.Point(0, 75);
+            this.radioExe.Name = "radioExe";
+            this.radioExe.Size = new System.Drawing.Size(148, 25);
+            this.radioExe.TabIndex = 14;
+            this.radioExe.TabStop = true;
+            this.radioExe.Text = "exe";
+            this.radioExe.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.radioExe.UseVisualStyleBackColor = true;
+            // 
+            // radioRaw
+            // 
+            this.radioRaw.AutoSize = true;
+            this.radioRaw.Dock = System.Windows.Forms.DockStyle.Top;
+            this.radioRaw.Font = new System.Drawing.Font("Century Gothic", 13F);
+            this.radioRaw.ForeColor = System.Drawing.Color.White;
+            this.radioRaw.Location = new System.Drawing.Point(0, 25);
+            this.radioRaw.Name = "radioRaw";
+            this.radioRaw.Size = new System.Drawing.Size(148, 25);
+            this.radioRaw.TabIndex = 15;
+            this.radioRaw.TabStop = true;
+            this.radioRaw.Text = "raw";
+            this.radioRaw.UseVisualStyleBackColor = true;
+            // 
+            // radioDll
+            // 
+            this.radioDll.AutoSize = true;
+            this.radioDll.Dock = System.Windows.Forms.DockStyle.Top;
+            this.radioDll.Font = new System.Drawing.Font("Century Gothic", 13F);
+            this.radioDll.ForeColor = System.Drawing.Color.White;
+            this.radioDll.Location = new System.Drawing.Point(0, 0);
+            this.radioDll.Name = "radioDll";
+            this.radioDll.Size = new System.Drawing.Size(148, 25);
+            this.radioDll.TabIndex = 13;
+            this.radioDll.TabStop = true;
+            this.radioDll.Text = "dll";
+            this.radioDll.UseVisualStyleBackColor = true;
+            // 
+            // RightPanelForLaterUsage
+            // 
+            this.RightPanelForLaterUsage.Controls.Add(this.panel1);
+            this.RightPanelForLaterUsage.Dock = System.Windows.Forms.DockStyle.Right;
+            this.RightPanelForLaterUsage.Location = new System.Drawing.Point(770, 100);
+            this.RightPanelForLaterUsage.Name = "RightPanelForLaterUsage";
+            this.RightPanelForLaterUsage.Size = new System.Drawing.Size(148, 312);
+            this.RightPanelForLaterUsage.TabIndex = 5;
             // 
             // FormEncryptions
             // 
@@ -448,13 +397,11 @@
             this.panel2.PerformLayout();
             this.OptionsPanelBottom.ResumeLayout(false);
             this.OptionsPanelBottom.PerformLayout();
-            this.RightPanelForLaterUsage.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.imgPanel.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.RightPanelForLaterUsage.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -465,7 +412,6 @@
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Panel panelLeft;
         private System.Windows.Forms.Panel OptionsPanelBottom;
-        private System.Windows.Forms.Panel RightPanelForLaterUsage;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label lblOutput;
@@ -475,18 +421,15 @@
         private System.Windows.Forms.Button btnFileToEncrypt;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.RadioButton radioEkko;
         private System.Windows.Forms.RadioButton radioAes256;
         private System.Windows.Forms.RadioButton radioRc4;
         private System.Windows.Forms.RadioButton radioXor;
         private System.Windows.Forms.RadioButton radioBase64;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RadioButton radioElf;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RadioButton radioExe;
         private System.Windows.Forms.RadioButton radioRaw;
         private System.Windows.Forms.RadioButton radioDll;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel RightPanelForLaterUsage;
     }
 }
