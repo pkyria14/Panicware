@@ -30,6 +30,7 @@
         {
             this.HostFilesbtn = new System.Windows.Forms.Button();
             this.RunDropperbtn = new System.Windows.Forms.Button();
+            this.RunShellcodeLoadbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // HostFilesbtn
@@ -58,15 +59,33 @@
             this.RunDropperbtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RunDropperbtn.ForeColor = System.Drawing.Color.White;
             this.RunDropperbtn.Image = global::PanicWareGui.Properties.Resources.transparent;
-            this.RunDropperbtn.Location = new System.Drawing.Point(485, 217);
+            this.RunDropperbtn.Location = new System.Drawing.Point(481, 113);
             this.RunDropperbtn.Name = "RunDropperbtn";
-            this.RunDropperbtn.Size = new System.Drawing.Size(196, 50);
+            this.RunDropperbtn.Size = new System.Drawing.Size(265, 58);
             this.RunDropperbtn.TabIndex = 8;
-            this.RunDropperbtn.Text = "Dropper";
+            this.RunDropperbtn.Text = "Dropper(Process Hollowing)";
             this.RunDropperbtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.RunDropperbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.RunDropperbtn.UseVisualStyleBackColor = false;
             this.RunDropperbtn.Click += new System.EventHandler(this.RunDropperbtn_Click);
+            // 
+            // RunShellcodeLoadbtn
+            // 
+            this.RunShellcodeLoadbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.RunShellcodeLoadbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RunShellcodeLoadbtn.FlatAppearance.BorderSize = 0;
+            this.RunShellcodeLoadbtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RunShellcodeLoadbtn.ForeColor = System.Drawing.Color.White;
+            this.RunShellcodeLoadbtn.Image = global::PanicWareGui.Properties.Resources.transparent;
+            this.RunShellcodeLoadbtn.Location = new System.Drawing.Point(481, 287);
+            this.RunShellcodeLoadbtn.Name = "RunShellcodeLoadbtn";
+            this.RunShellcodeLoadbtn.Size = new System.Drawing.Size(265, 58);
+            this.RunShellcodeLoadbtn.TabIndex = 9;
+            this.RunShellcodeLoadbtn.Text = "Dropper(Shellcode Load)";
+            this.RunShellcodeLoadbtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.RunShellcodeLoadbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.RunShellcodeLoadbtn.UseVisualStyleBackColor = false;
+            this.RunShellcodeLoadbtn.Click += new System.EventHandler(this.RunShellcodeLoadbtn_Click);
             // 
             // FormDropper
             // 
@@ -74,6 +93,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.RunShellcodeLoadbtn);
             this.Controls.Add(this.RunDropperbtn);
             this.Controls.Add(this.HostFilesbtn);
             this.Name = "FormDropper";
@@ -85,5 +105,6 @@
         #endregion
         private System.Windows.Forms.Button HostFilesbtn;
         private System.Windows.Forms.Button RunDropperbtn;
+        private System.Windows.Forms.Button RunShellcodeLoadbtn;
     }
 }
