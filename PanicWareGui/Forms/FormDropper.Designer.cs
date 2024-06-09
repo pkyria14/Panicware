@@ -28,37 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.RunDropperbtn = new FontAwesome.Sharp.IconButton();
-            this.HostFilesbtn = new FontAwesome.Sharp.IconButton();
+            this.HostFilesbtn = new System.Windows.Forms.Button();
+            this.RunDropperbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // RunDropperbtn
-            // 
-            this.RunDropperbtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RunDropperbtn.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.RunDropperbtn.IconColor = System.Drawing.Color.Black;
-            this.RunDropperbtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.RunDropperbtn.Location = new System.Drawing.Point(497, 206);
-            this.RunDropperbtn.Name = "RunDropperbtn";
-            this.RunDropperbtn.Size = new System.Drawing.Size(106, 27);
-            this.RunDropperbtn.TabIndex = 0;
-            this.RunDropperbtn.Text = "Dropper";
-            this.RunDropperbtn.UseVisualStyleBackColor = true;
-            this.RunDropperbtn.Click += new System.EventHandler(this.RunDropperbtn_Click);
             // 
             // HostFilesbtn
             // 
-            this.HostFilesbtn.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.HostFilesbtn.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.HostFilesbtn.IconColor = System.Drawing.Color.Black;
-            this.HostFilesbtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.HostFilesbtn.Location = new System.Drawing.Point(134, 206);
+            this.HostFilesbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.HostFilesbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.HostFilesbtn.FlatAppearance.BorderSize = 0;
+            this.HostFilesbtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HostFilesbtn.ForeColor = System.Drawing.Color.White;
+            this.HostFilesbtn.Image = global::PanicWareGui.Properties.Resources.transparent;
+            this.HostFilesbtn.Location = new System.Drawing.Point(77, 217);
             this.HostFilesbtn.Name = "HostFilesbtn";
-            this.HostFilesbtn.Size = new System.Drawing.Size(112, 27);
-            this.HostFilesbtn.TabIndex = 1;
-            this.HostFilesbtn.Text = "Host Files";
-            this.HostFilesbtn.UseVisualStyleBackColor = true;
+            this.HostFilesbtn.Size = new System.Drawing.Size(196, 50);
+            this.HostFilesbtn.TabIndex = 7;
+            this.HostFilesbtn.Text = "Host Payload";
+            this.HostFilesbtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.HostFilesbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.HostFilesbtn.UseVisualStyleBackColor = false;
             this.HostFilesbtn.Click += new System.EventHandler(this.HostFilesbtn_Click);
+            // 
+            // RunDropperbtn
+            // 
+            this.RunDropperbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.RunDropperbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RunDropperbtn.FlatAppearance.BorderSize = 0;
+            this.RunDropperbtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RunDropperbtn.ForeColor = System.Drawing.Color.White;
+            this.RunDropperbtn.Image = global::PanicWareGui.Properties.Resources.transparent;
+            this.RunDropperbtn.Location = new System.Drawing.Point(485, 217);
+            this.RunDropperbtn.Name = "RunDropperbtn";
+            this.RunDropperbtn.Size = new System.Drawing.Size(196, 50);
+            this.RunDropperbtn.TabIndex = 8;
+            this.RunDropperbtn.Text = "Dropper";
+            this.RunDropperbtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.RunDropperbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.RunDropperbtn.UseVisualStyleBackColor = false;
+            this.RunDropperbtn.Click += new System.EventHandler(this.RunDropperbtn_Click);
             // 
             // FormDropper
             // 
@@ -66,8 +74,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.HostFilesbtn);
             this.Controls.Add(this.RunDropperbtn);
+            this.Controls.Add(this.HostFilesbtn);
             this.Name = "FormDropper";
             this.Text = "Dropper";
             this.ResumeLayout(false);
@@ -75,8 +83,7 @@
         }
 
         #endregion
-
-        private FontAwesome.Sharp.IconButton RunDropperbtn;
-        private FontAwesome.Sharp.IconButton HostFilesbtn;
+        private System.Windows.Forms.Button HostFilesbtn;
+        private System.Windows.Forms.Button RunDropperbtn;
     }
 }

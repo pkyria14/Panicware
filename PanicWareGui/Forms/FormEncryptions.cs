@@ -86,7 +86,7 @@ namespace PanicWareGui.Forms
             if (radioXor.Checked)
             {
                 algorithmName = "XOR";
-                string xor_key = GetUserKey();
+                string xor_key = "MySecretKey";
                 encryptedContent = Encryptions.radioXOR(fileContent, xor_key);
             }
             /*else if (radioBase64.Checked)
